@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register / Interest List — IEEE Smart Cities Dallas</title>
+<meta name="description" content="Join the interest list for IEEE Smart Cities Dallas and be the first to hear about registration.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="status-banner">
+  Working draft site — registration is not open yet. Join the interest list below.
+</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">SC</span>
+      <span class="brand-text">IEEE Smart Cities Dallas<small>From Chips to Cities</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tracks.html">Topic Tracks</a>
+      <a href="call-for-speakers.html">Call for Speakers</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="registration.html">Register</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="call-for-speakers.html#submit">Submit Proposal</a>
+    </div>
+  </nav>
+</header>
+
+<section class="section" style="padding-top:48px;">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Registration</span>
+      <h1>Join the interest list</h1>
+      <p class="lead" style="margin:0 auto;">
+        Registration isn't open yet. Join the interest list to be notified as soon as it is &mdash;
+        we'll also share agenda updates and speaker announcements.
+      </p>
+    </div>
+
+    <div class="form-card">
+      <div class="form-success">
+        Thanks &mdash; you're on the interest list. We'll be in touch with updates.
+      </div>
+
+      <!--
+        DEVELOPER NOTE: connect this form to a real destination (Google Form, Formspree, or
+        backend) before launch. Once registration opens, replace/extend this form with a
+        registration button and pricing details per the committee's notes.
+      -->
+      <form data-form>
+        <div class="form-grid">
+          <div class="field">
+            <label for="r-name">Name *</label>
+            <input type="text" id="r-name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="r-email">Email *</label>
+            <input type="email" id="r-email" name="email" required>
+          </div>
+          <div class="field full">
+            <label for="r-org">Organization</label>
+            <input type="text" id="r-org" name="organization">
+          </div>
+          <div class="field">
+            <label for="r-category">Interest category *</label>
+            <select id="r-category" name="category" required>
+              <option value="">Select one&hellip;</option>
+              <option>Attendee</option>
+              <option>Speaker</option>
+              <option>Sponsor</option>
+              <option>Volunteer</option>
+              <option>Student / YP / WIE</option>
+              <option>Media / Press</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="r-topics">Topic interests</label>
+            <input type="text" id="r-topics" name="topics" placeholder="e.g., AI, energy, mobility">
+          </div>
+        </div>
+        <div class="checkbox-field">
+          <input type="checkbox" id="r-updates" name="updates" checked>
+          <label for="r-updates">I'd like to receive email updates about this event.</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Join Interest List</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>IEEE Smart Cities Dallas</h4>
+        <p>From Chips to Cities: Building Smart, Resilient, and Connected Communities. A regional IEEE Smart Cities technical event planned for Plano, TX.</p>
+      </div>
+      <div>
+        <h4>Event</h4>
+        <a href="about.html">About</a>
+        <a href="tracks.html">Topic Tracks</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="speakers.html">Speakers</a>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <a href="call-for-speakers.html">Submit a Proposal</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="registration.html">Register / Interest List</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> IEEE Smart Cities Dallas. All event details are proposed and subject to committee approval.</span>
+      <span>IEEE is a registered trademark. This is not an official IEEE web property unless otherwise noted.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

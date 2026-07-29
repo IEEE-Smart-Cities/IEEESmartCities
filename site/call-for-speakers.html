@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call for Speaker Proposals — IEEE Smart Cities Dallas</title>
+<meta name="description" content="Submit a speaker proposal for IEEE Smart Cities Dallas. Speaker-only event this cycle — no paper submissions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="status-banner">
+  Working draft site — form fields and process are proposed and subject to committee review.
+</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">SC</span>
+      <span class="brand-text">IEEE Smart Cities Dallas<small>From Chips to Cities</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tracks.html">Topic Tracks</a>
+      <a href="call-for-speakers.html">Call for Speakers</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="registration.html">Register</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="call-for-speakers.html#submit">Submit Proposal</a>
+    </div>
+  </nav>
+</header>
+
+<section class="section" style="padding-top:48px;">
+  <div class="container">
+    <div class="section-header left">
+      <span class="eyebrow">Call for Speaker Proposals</span>
+      <h1>Share your work at IEEE Smart Cities Dallas</h1>
+      <p class="lead">
+        This is a <strong>speaker-only event</strong> this cycle &mdash; we are not running a paper
+        submission or peer-review process. We invite industry professionals, researchers,
+        public-sector leaders, students, WIE, YP, and community stakeholders to propose a session.
+      </p>
+    </div>
+
+    <div class="grid grid-2" style="margin-bottom:12px;">
+      <div>
+        <h3>Proposal types</h3>
+        <ul style="color:var(--text-muted); font-size:.95rem; padding-left:20px; line-height:1.9;">
+          <li>Technical talk</li>
+          <li>Industry case study</li>
+          <li>Panel discussion</li>
+          <li>Workshop or tutorial</li>
+          <li>Demonstration or showcase</li>
+          <li>Student lightning talk</li>
+          <li>Young Professional or WIE session</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Before you submit</h3>
+        <ul style="color:var(--text-muted); font-size:.95rem; padding-left:20px; line-height:1.9;">
+          <li>Review the <a href="tracks.html">topic tracks</a> and choose the closest fit.</li>
+          <li>Identify at least one UN SDG your session connects to, and be ready to briefly explain the connection.</li>
+          <li>Have a short bio and abstract ready (see field lengths below).</li>
+          <li>A headshot or LinkedIn link is optional but appreciated.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>UN SDG alignment.</strong> Every proposal is asked to identify at least one UN
+      Sustainable Development Goal and briefly explain the connection between the goal and the
+      proposed session.
+    </div>
+
+    <div class="section-header left" style="margin-top:56px;">
+      <span class="eyebrow">How it works</span>
+      <h2>Simple review workflow</h2>
+    </div>
+    <ol class="steps" style="max-width:760px;">
+      <li><strong>Submit your proposal</strong> using the form below.</li>
+      <li><strong>Your response is recorded</strong> by the Technical Program committee for review.</li>
+      <li><strong>A reviewer or committee owner is assigned</strong> and scores the proposal against the review rubric.</li>
+      <li><strong>The committee decides:</strong> accept, panel, workshop, revise, waitlist, or decline.</li>
+      <li><strong>Accepted speakers receive a confirmation email</strong> and are added to the Speakers and Agenda pages.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-alt" id="submit">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Speaker Proposal Form</span>
+      <h2>Submit your proposal</h2>
+      <p class="lead" style="margin:0 auto;">
+        Fields marked <strong>*</strong> are required. This should take about 10&ndash;15 minutes.
+      </p>
+    </div>
+
+    <div class="form-card">
+      <div class="form-success">
+        Thanks &mdash; your proposal has been recorded. This is a preview form; the developer note
+        below explains how submissions will be connected to a live spreadsheet before launch.
+      </div>
+
+      <!--
+        DEVELOPER NOTE:
+        Per the committee's notes, the recommended path for this cycle is to link this button /
+        form to a Microsoft Form or Google Form so responses land directly in Excel or Google
+        Sheets (the proposal tracker). Two options:
+          1) Replace this <form> with an <iframe> embed of the chosen Google/Microsoft Form, or
+          2) Keep this HTML form and set the `action` attribute to a real endpoint (Google Form
+             POST URL, Formspree, or a custom backend), then confirm exports to Excel/CSV.
+        Until connected, this form only shows a front-end confirmation message (see js/main.js).
+      -->
+      <form data-form>
+        <div class="section-header left" style="margin:0 0 16px;"><h3 style="margin:0;">Contact Information</h3></div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="full-name">Full name *</label>
+            <input type="text" id="full-name" name="full-name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="field">
+            <label for="category">Speaker category *</label>
+            <select id="category" name="category" required>
+              <option value="">Select one&hellip;</option>
+              <option>Industry</option>
+              <option>Academic</option>
+              <option>Government / public agency</option>
+              <option>Student</option>
+              <option>Young Professional (YP)</option>
+              <option>Women in Engineering (WIE)</option>
+              <option>Startup</option>
+              <option>Community organization</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="organization">Organization and job title *</label>
+            <input type="text" id="organization" name="organization" placeholder="e.g., Jane Doe, Principal Engineer, Acme Corp" required>
+          </div>
+        </div>
+
+        <div class="section-header left" style="margin:24px 0 16px;"><h3 style="margin:0;">Session Details</h3></div>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="session-title">Proposed session title *</label>
+            <input type="text" id="session-title" name="session-title" required>
+          </div>
+          <div class="field">
+            <label for="track">Preferred topic track *</label>
+            <select id="track" name="track" required>
+              <option value="">Select one&hellip;</option>
+              <option>Smart City Services and Infrastructure</option>
+              <option>Sustainable Cities, Communities, and Climate Resilience</option>
+              <option>Smart Energy, Grid, and Electrification</option>
+              <option>Smart Mobility, Transportation, and Connected Systems</option>
+              <option>Data Spaces, AI, Digital Twins, and Smart City Platforms</option>
+              <option>IoT, Sensors, Connectivity, Cybersecurity, and Privacy</option>
+              <option>Semiconductor, AI Hardware, and Edge Intelligence for Smart Cities</option>
+              <option>Smart Governance, Health, Education, Workforce, and Community Impact</option>
+              <option>Not sure / other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="proposal-type">Proposal type *</label>
+            <select id="proposal-type" name="proposal-type" required>
+              <option value="">Select one&hellip;</option>
+              <option>Technical talk</option>
+              <option>Industry case study</option>
+              <option>Panel discussion</option>
+              <option>Workshop or tutorial</option>
+              <option>Demonstration or showcase</option>
+              <option>Student lightning talk</option>
+              <option>Young Professional or WIE session</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="abstract">Abstract or summary * <span class="hint">(150&ndash;300 words)</span></label>
+            <textarea id="abstract" name="abstract" required></textarea>
+          </div>
+          <div class="field full">
+            <label for="takeaways">Audience takeaways * <span class="hint">(3&ndash;5 takeaways, one per line)</span></label>
+            <textarea id="takeaways" name="takeaways" required></textarea>
+          </div>
+          <div class="field">
+            <label for="level">Technical level *</label>
+            <select id="level" name="level" required>
+              <option value="">Select one&hellip;</option>
+              <option>Introductory</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="format">Preferred format *</label>
+            <select id="format" name="format" required>
+              <option value="">Select one&hellip;</option>
+              <option>In-person</option>
+              <option>Virtual</option>
+              <option>Hybrid</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-header left" style="margin:24px 0 16px;"><h3 style="margin:0;">UN SDG Alignment</h3></div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="sdg-primary">Primary UN SDG *</label>
+            <input type="text" id="sdg-primary" name="sdg-primary" placeholder="e.g., SDG 11" required>
+          </div>
+          <div class="field">
+            <label for="sdg-additional">Additional UN SDGs <span class="hint">(if applicable)</span></label>
+            <input type="text" id="sdg-additional" name="sdg-additional" placeholder="e.g., SDG 7, SDG 13">
+          </div>
+          <div class="field full">
+            <label for="sdg-explanation">SDG alignment explanation * <span class="hint">(75&ndash;150 words)</span></label>
+            <textarea id="sdg-explanation" name="sdg-explanation" required></textarea>
+          </div>
+        </div>
+
+        <div class="section-header left" style="margin:24px 0 16px;"><h3 style="margin:0;">Speaker Bio</h3></div>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="bio">Short speaker bio * <span class="hint">(100&ndash;150 words)</span></label>
+            <textarea id="bio" name="bio" required></textarea>
+          </div>
+          <div class="field full">
+            <label for="headshot">Headshot or LinkedIn link <span class="hint">(optional)</span></label>
+            <input type="text" id="headshot" name="headshot" placeholder="Link to headshot image or LinkedIn profile">
+          </div>
+        </div>
+
+        <div class="checkbox-field">
+          <input type="checkbox" id="panel-open" name="panel-open">
+          <label for="panel-open">I'm open to joining a panel discussion, in addition to my proposed session.</label>
+        </div>
+        <div class="checkbox-field">
+          <input type="checkbox" id="mentor" name="mentor">
+          <label for="mentor">I'm willing to mentor students / Young Professionals.</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit Speaker Proposal</button>
+        <p class="form-note">
+          By submitting, you agree that the Technical Program committee may contact you about
+          scheduling, review status, and additional details (AV needs, bio, headshot) if accepted.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>IEEE Smart Cities Dallas</h4>
+        <p>From Chips to Cities: Building Smart, Resilient, and Connected Communities. A regional IEEE Smart Cities technical event planned for Plano, TX.</p>
+      </div>
+      <div>
+        <h4>Event</h4>
+        <a href="about.html">About</a>
+        <a href="tracks.html">Topic Tracks</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="speakers.html">Speakers</a>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <a href="call-for-speakers.html">Submit a Proposal</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="registration.html">Register / Interest List</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> IEEE Smart Cities Dallas. All event details are proposed and subject to committee approval.</span>
+      <span>IEEE is a registered trademark. This is not an official IEEE web property unless otherwise noted.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

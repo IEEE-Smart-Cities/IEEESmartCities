@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — IEEE Smart Cities Dallas</title>
+<meta name="description" content="Contact the IEEE Smart Cities Dallas committee about speaking, sponsoring, attending, or volunteering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="status-banner">
+  Working draft site — contact routing is proposed and subject to committee approval.
+</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">SC</span>
+      <span class="brand-text">IEEE Smart Cities Dallas<small>From Chips to Cities</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tracks.html">Topic Tracks</a>
+      <a href="call-for-speakers.html">Call for Speakers</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="registration.html">Register</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="call-for-speakers.html#submit">Submit Proposal</a>
+    </div>
+  </nav>
+</header>
+
+<section class="section" style="padding-top:48px;">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Contact</span>
+      <h1>Get in touch</h1>
+      <p class="lead" style="margin:0 auto;">
+        Have a question about speaking, sponsoring, attending, or volunteering? Send us a message
+        and the right committee member will follow up.
+      </p>
+    </div>
+
+    <div class="grid grid-3" style="margin-bottom:48px;">
+      <div class="card" style="text-align:center;">
+        <div class="icon" style="margin:0 auto 14px;">&#9993;</div>
+        <h3>Email</h3>
+        <!-- DEVELOPER NOTE: replace with the committee's approved contact email -->
+        <p style="color:var(--text-muted); font-size:.92rem;">
+          <a href="mailto:smartcities.dallas@ieee.org">smartcities.dallas@ieee.org</a>
+        </p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="icon" style="margin:0 auto 14px;">&#128205;</div>
+        <h3>Planned Venue</h3>
+        <p style="color:var(--text-muted); font-size:.92rem;">Collin College &ndash; Plano Campus Conference Center<br>Plano, TX, USA</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="icon" style="margin:0 auto 14px;">&#128197;</div>
+        <h3>Planned Date</h3>
+        <p style="color:var(--text-muted); font-size:.92rem;">November 21, 2026 (subject to confirmation)</p>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="form-success">
+        Thanks &mdash; your message has been recorded. This is a preview form; see the developer
+        note below for connecting it to a real inbox before launch.
+      </div>
+
+      <!--
+        DEVELOPER NOTE: connect this form to a real destination before launch, e.g. a mailto
+        fallback, Formspree, or a backend endpoint. See README.md.
+      -->
+      <form data-form>
+        <div class="form-grid">
+          <div class="field">
+            <label for="c-name">Name *</label>
+            <input type="text" id="c-name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="c-email">Email *</label>
+            <input type="email" id="c-email" name="email" required>
+          </div>
+          <div class="field full">
+            <label for="c-category">I'm reaching out about *</label>
+            <select id="c-category" name="category" required>
+              <option value="">Select one&hellip;</option>
+              <option>Speaker proposal</option>
+              <option>Sponsorship</option>
+              <option>Attending</option>
+              <option>Volunteering</option>
+              <option>Student / YP / WIE</option>
+              <option>General question</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="c-message">Message *</label>
+            <textarea id="c-message" name="message" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>IEEE Smart Cities Dallas</h4>
+        <p>From Chips to Cities: Building Smart, Resilient, and Connected Communities. A regional IEEE Smart Cities technical event planned for Plano, TX.</p>
+      </div>
+      <div>
+        <h4>Event</h4>
+        <a href="about.html">About</a>
+        <a href="tracks.html">Topic Tracks</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="speakers.html">Speakers</a>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <a href="call-for-speakers.html">Submit a Proposal</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="registration.html">Register / Interest List</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> IEEE Smart Cities Dallas. All event details are proposed and subject to committee approval.</span>
+      <span>IEEE is a registered trademark. This is not an official IEEE web property unless otherwise noted.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
