@@ -13,37 +13,33 @@ The site files live in the project root; the `site/` folder is not used.
 
 ## Structure
 
-- `index.html`, `about.html`, `tracks.html`, `call-for-speakers.html`,
-  `contact.html` — Phase 1 pages.
-- `agenda.html`, `speakers.html`, `sponsors.html`, `registration.html` —
-  Phase 2/3 pages, currently "coming soon" / high-level placeholders.
+- `index.html`, `about.html`, `program-committee.html`, `tracks.html`,
+  `call-for-speakers.html`, `contact.html` — main event pages.
+- `agenda.html`, `speakers.html`, `registration.html` — Phase 2/3 pages,
+  currently "coming soon" / high-level placeholders.
+- `sponsors.html` — technical sponsorship acknowledgement retained for
+  existing inbound links; it is not included in the primary navigation.
 - `css/style.css` — single shared stylesheet (colors, layout, components).
-- `js/main.js` — mobile nav toggle, active-link highlighting, and
-  front-end-only form confirmation messages.
+- `js/main.js` — mobile navigation, active-link highlighting, shared email
+  links, status messaging, and Sessionize link handling.
 
 Each page is self-contained HTML (nav + footer duplicated per page) so any
 committee member can edit text directly without a build process.
 
 ## Before launch — things to connect
 
-1. **Speaker proposal form** (`call-for-speakers.html#submit`) and
-   **Interest list** / **Contact** forms currently only show an in-browser
-   confirmation message — they don't send data anywhere. Wire them to one
-   of:
-   - A Google Form / Microsoft Form (either embed as an `<iframe>`, or
-     point users to it and drop the HTML form), or
-   - A form backend (Formspree, etc.) or custom endpoint, with the
-     `action` attribute set and responses exported to Excel/CSV.
-   See the `DEVELOPER NOTE` comments in each page's `<form>` block.
-2. Replace the placeholder contact email in `contact.html`.
+1. Registration updates and general questions currently use direct email links.
+   Add an approved registration or contact platform if direct submission is
+   required later.
+2. Update the shared contact email in `js/config.js` when a replacement
+   address is approved.
 3. Confirm date/venue (currently "Nov 21, 2026, Collin College – Plano
    Campus Conference Center, Plano, TX" per conference record #72378) —
    update `index.html`, `about.html`, and `contact.html` if it changes.
-4. Add real sponsor logos, speaker cards, and agenda once available
+4. Add confirmed speaker cards and the final agenda once available
    (placeholders are marked with `DEVELOPER NOTE` comments in
-   `speakers.html` and `sponsors.html`).
-5. Add a favicon / logo image in `assets/` and reference it in each
-   page's `<head>` (currently using a text "SC" mark in the nav).
+   `speakers.html` and `agenda.html`).
+5. The IEEE Smart Cities logo and social-sharing image live in `assets/`.
 
 ## Editing content
 

@@ -25,7 +25,7 @@ window.SC_CONFIG = {
   /* -----------------------------------------------------------
      2. OFFICIAL SHARED CONFERENCE EMAIL
      -----------------------------------------------------------
-     Used on Contact, Call for Speakers, Registration, Sponsors and
+     Used on Contact, Call for Speakers, Registration and
      in every mailto form. Must match the address configured in
      Sessionize and used in outreach messages.
   ----------------------------------------------------------- */
@@ -49,8 +49,6 @@ window.SC_CONFIG = {
     lineupPublished:   '2026-10-26T09:00:00-05:00', // Mon Oct 26, 2026
     speakerCopyDue:    '2026-10-30T23:59:59-05:00', // Fri Oct 30, 2026
     slidesDue:         '2026-11-06T17:00:00-06:00', // Fri Nov 6, 2026, 5:00 PM CT
-    techChecksStart:   '2026-11-09T09:00:00-06:00', // Mon Nov 9, 2026
-    techChecksEnd:     '2026-11-12T17:00:00-06:00', // Thu Nov 12, 2026
     agendaPublished:   '2026-11-13T09:00:00-06:00', // Fri Nov 13, 2026
     slideCutoff:       '2026-11-18T17:00:00-06:00', // Wed Nov 18, 2026, 5:00 PM CT
     eventDay:          '2026-11-21T08:00:00-06:00'  // Sat Nov 21, 2026
@@ -60,7 +58,7 @@ window.SC_CONFIG = {
      4. DRAFT NOTICE
      -----------------------------------------------------------
      Leave true until the committee has signed off on date, venue
-     wording, IEEE branding/disclaimer language, sponsor language,
+     wording, IEEE branding/disclaimer language, technical sponsorship language,
      the shared email, and the Sessionize URL. When true, a short
      "subject to committee approval" line stays in the footer.
   ----------------------------------------------------------- */

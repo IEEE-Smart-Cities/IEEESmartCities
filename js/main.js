@@ -138,7 +138,7 @@
       var now = new Date();
       var phases = [
         { until: on(D.cfsOpens), cls: '', text:
-            'Call for Speakers opens Tuesday, August 25, 2026. Live hybrid event: Saturday, November 21, 2026.',
+            'Call for Speakers opens Tuesday, August 25, 2026. In-person event: Saturday, November 21, 2026.',
           cta: 'Read the Call for Speakers', href: 'call-for-speakers.html' },
 
         { until: on(D.finalDeadline), cls: 'is-open', text:
@@ -158,11 +158,11 @@
           cta: 'View speakers', href: 'speakers.html' },
 
         { until: on(D.eventDay), cls: 'is-open', text:
-            'Final agenda is published. IEEE Smart Cities Dallas is Saturday, November 21, 2026 — in person and online.',
+            'Final agenda is published. IEEE Smart Cities Dallas is Saturday, November 21, 2026 — in person in Plano.',
           cta: 'View the agenda', href: 'agenda.html' },
 
         { until: null, cls: 'is-open', text:
-            'IEEE Smart Cities Dallas — Saturday, November 21, 2026. Thank you to our speakers, sponsors, and attendees.',
+            'IEEE Smart Cities Dallas — Saturday, November 21, 2026. Thank you to our speakers and attendees.',
           cta: 'View the agenda', href: 'agenda.html' }
       ];
 
@@ -195,55 +195,6 @@
         el.hidden = true;
       });
     }
-
-    /* ---------------------------------------------------------
-       Shared-email forms
-       ---------------------------------------------------------
-       These forms hold no data and post nowhere. On submit they
-       compose a pre-filled message to the official shared email
-       and hand it to the visitor's mail app. Nothing claims a
-       submission was recorded, and the form is never cleared —
-       if the mail app fails to open, the typed text is still
-       there to copy.
-       --------------------------------------------------------- */
-    document.querySelectorAll('form[data-mailform]').forEach(function (form) {
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        if (!EMAIL) return;
-
-        var lines = [];
-        form.querySelectorAll('input[name], select[name], textarea[name]').forEach(function (el) {
-          var label = form.querySelector('label[for="' + el.id + '"]');
-          var name = label
-            ? label.textContent.replace(/\*/g, '').replace(/\s+/g, ' ').trim()
-            : el.name;
-
-          if (el.type === 'checkbox') {
-            lines.push(name + ': ' + (el.checked ? 'Yes' : 'No'));
-          } else if (el.value.trim()) {
-            lines.push(name + ':\n' + el.value.trim());
-          }
-        });
-
-        var body = lines.join('\n\n');
-        if (body.length > 1800) {
-          body = body.slice(0, 1800) +
-            '\n\n[Message truncated to fit your email app. Please paste the rest below.]';
-        }
-
-        var subject = form.getAttribute('data-subject') || 'IEEE Smart Cities Dallas enquiry';
-        window.location.href = 'mailto:' + EMAIL +
-          '?subject=' + encodeURIComponent(subject) +
-          '&body=' + encodeURIComponent(body);
-
-        var note = form.parentElement.querySelector('.form-handoff');
-        if (note) {
-          note.classList.add('show');
-          note.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-      });
-    });
 
   });
 }());
