@@ -3,27 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Register / Interest List — IEEE Smart Cities Dallas</title>
-<meta name="description" content="Join the interest list for IEEE Smart Cities Dallas and be the first to hear about registration.">
+<title>Register / Interest List â€” IEEE Smart Cities Dallas</title>
+<meta name="description" content="Join the interest list for IEEE Smart Cities Dallas and be the first to hear when registration opens for the November 21, 2026 hybrid event.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#0A0A0F">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IEEE Smart Cities Dallas">
+<meta property="og:image" content="assets/ieee-smart-cities-dallas-social.png">
+<meta property="og:image:alt" content="IEEE Smart Cities Dallas â€” From Chips to Cities â€” Hybrid Event, November 21, 2026">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/ieee-smart-cities-dallas-logo.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<div class="status-banner">
-  Working draft site — registration is not open yet. Join the interest list below.
+<div class="status-banner" data-status-banner role="status" aria-live="polite">
+  <span data-status-text>Call for Speakers is open â€” proposals due Wednesday, September 30, 2026, 11:59 PM CT.</span>
+  <a href="call-for-speakers.html" data-status-link>Submit a proposal â†’</a>
 </div>
 
 <header class="site-header">
   <nav class="nav">
     <a class="brand" href="index.html">
-      <span class="brand-mark">SC</span>
+      <span class="brand-mark"><img src="assets/ieee-smart-cities-dallas-logo.png" alt="" aria-hidden="true"></span>
       <span class="brand-text">IEEE Smart Cities Dallas<small>From Chips to Cities</small></span>
     </a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
-    <div class="nav-links">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
+    <div class="nav-links" id="primary-navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="tracks.html">Topic Tracks</a>
@@ -33,33 +42,52 @@
       <a href="sponsors.html">Sponsors</a>
       <a href="registration.html">Register</a>
       <a href="contact.html">Contact</a>
-      <a class="nav-cta" href="call-for-speakers.html#submit">Submit Proposal</a>
+      <a class="nav-cta" href="call-for-speakers.html#submit" data-sessionize>Submit Proposal</a>
     </div>
   </nav>
 </header>
 
+<main id="main-content">
 <section class="section" style="padding-top:48px;">
   <div class="container">
     <div class="section-header">
       <span class="eyebrow">Registration</span>
       <h1>Join the interest list</h1>
       <p class="lead" style="margin:0 auto;">
-        Registration isn't open yet. Join the interest list to be notified as soon as it is &mdash;
-        we'll also share agenda updates and speaker announcements.
+        Attendee registration for the November 21, 2026 hybrid event is not open yet. Send us your
+        details and we will notify you as soon as it opens, along with agenda updates and speaker
+        announcements.
       </p>
     </div>
 
+    <div class="callout" style="max-width:720px; margin-inline:auto;">
+      <strong>Speaking, not attending?</strong> Speaker proposals go through a separate process
+      &mdash; see the <a href="call-for-speakers.html">Call for Speakers</a> page. Proposals close
+      September 30, 2026.
+    </div>
+
+    <!--
+      DEVELOPER NOTE â€” interest list
+      ==============================
+      This form does NOT post anywhere and stores nothing. On submit it
+      composes a pre-filled message to the shared conference email
+      (js/config.js â†’ email) and hands it to the visitor's mail app.
+      Nothing tells the visitor their details were "recorded".
+
+      If the committee later approves a real backend (Microsoft Form,
+      Google Form, Formspree, or a registration platform), replace this
+      block with that embed or endpoint and drop the data-mailform
+      attribute.
+    -->
     <div class="form-card">
-      <div class="form-success">
-        Thanks &mdash; you're on the interest list. We'll be in touch with updates.
+      <div class="form-handoff">
+        <strong>Your email app should now be open</strong> with a pre-filled message &mdash; press
+        send to reach the committee. If nothing opened, copy the details below into an email to
+        <a data-email data-email-text href="mailto:smartcities.dallas@ieee.org">smartcities.dallas@ieee.org</a>.
+        Your answers are still filled in here.
       </div>
 
-      <!--
-        DEVELOPER NOTE: connect this form to a real destination (Google Form, Formspree, or
-        backend) before launch. Once registration opens, replace/extend this form with a
-        registration button and pricing details per the committee's notes.
-      -->
-      <form data-form>
+      <form data-mailform data-subject="Interest list â€” IEEE Smart Cities Dallas">
         <div class="form-grid">
           <div class="field">
             <label for="r-name">Name *</label>
@@ -87,6 +115,15 @@
             </select>
           </div>
           <div class="field">
+            <label for="r-mode">How would you attend?</label>
+            <select id="r-mode" name="mode">
+              <option value="">Select one&hellip;</option>
+              <option>In person in Plano, TX</option>
+              <option>Online</option>
+              <option>Either</option>
+            </select>
+          </div>
+          <div class="field full">
             <label for="r-topics">Topic interests</label>
             <input type="text" id="r-topics" name="topics" placeholder="e.g., AI, energy, mobility">
           </div>
@@ -95,18 +132,36 @@
           <input type="checkbox" id="r-updates" name="updates" checked>
           <label for="r-updates">I'd like to receive email updates about this event.</label>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Join Interest List</button>
+
+        <button type="submit" class="btn btn-primary btn-block">Email the committee</button>
+
+        <p class="privacy-note">
+          <strong>How this works.</strong> This page stores nothing. Selecting the button above opens
+          your own email app with these answers pre-filled &mdash; nothing is sent until you press
+          send. <strong>Privacy.</strong> Your details are used only to contact you about IEEE Smart
+          Cities Dallas registration, agenda, and speaker announcements. They are not published, sold,
+          or shared outside the conference committee, and you can ask us to remove you at any time by
+          replying to any message.
+        </p>
       </form>
     </div>
+
+    <p style="text-align:center; font-size:.9rem; color:var(--text-muted); margin-top:22px;">
+      Prefer to write your own email? Reach us at
+      <a data-email data-email-text href="mailto:smartcities.dallas@ieee.org">smartcities.dallas@ieee.org</a>.
+    </p>
   </div>
 </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div>
         <h4>IEEE Smart Cities Dallas</h4>
-        <p>From Chips to Cities: Building Smart, Resilient, and Connected Communities. A regional IEEE Smart Cities technical event planned for Plano, TX.</p>
+        <p>From Chips to Cities: Building Smart, Resilient, and Connected Communities. A regional IEEE Smart Cities hybrid technical event at Collin College &ndash; Plano Campus Conference Center, Plano, TX &mdash; Saturday, November 21, 2026.</p>
+        <p style="margin:14px 0 0;"><a data-email data-email-text href="mailto:smartcities.dallas@ieee.org">smartcities.dallas@ieee.org</a></p>
       </div>
       <div>
         <h4>Event</h4>
@@ -117,19 +172,20 @@
       </div>
       <div>
         <h4>Get Involved</h4>
-        <a href="call-for-speakers.html">Submit a Proposal</a>
+        <a href="call-for-speakers.html">Call for Speakers</a>
         <a href="sponsors.html">Sponsors</a>
         <a href="registration.html">Register / Interest List</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; <span id="year"></span> IEEE Smart Cities Dallas. All event details are proposed and subject to committee approval.</span>
+      <span>&copy; <span id="year"></span> IEEE Smart Cities Dallas.<span data-draft-notice> Event details are subject to committee approval.</span></span>
       <span>IEEE is a registered trademark. This is not an official IEEE web property unless otherwise noted.</span>
     </div>
   </div>
 </footer>
 
+<script src="js/config.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

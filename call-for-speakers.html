@@ -3,27 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Call for Speaker Proposals — IEEE Smart Cities Dallas</title>
-<meta name="description" content="Submit a speaker proposal for IEEE Smart Cities Dallas. Speaker-only event this cycle — no paper submissions.">
+<title>Call for Speakers â€” IEEE Smart Cities Dallas</title>
+<meta name="description" content="Call for Speakers for IEEE Smart Cities Dallas, a hybrid regional IEEE technical event on Saturday, November 21, 2026. Proposals due September 30, 2026. Speaker-only cycle â€” no paper submissions.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#0A0A0F">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IEEE Smart Cities Dallas">
+<meta property="og:image" content="assets/ieee-smart-cities-dallas-social.png">
+<meta property="og:image:alt" content="IEEE Smart Cities Dallas â€” From Chips to Cities â€” Hybrid Event, November 21, 2026">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/ieee-smart-cities-dallas-logo.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<div class="status-banner">
-  Working draft site — form fields and process are proposed and subject to committee review.
+<div class="status-banner" data-status-banner role="status" aria-live="polite">
+  <span data-status-text>Call for Speakers is open â€” proposals due Wednesday, September 30, 2026, 11:59 PM CT.</span>
+  <a href="call-for-speakers.html" data-status-link hidden>Submit a proposal â†’</a>
 </div>
 
 <header class="site-header">
   <nav class="nav">
     <a class="brand" href="index.html">
-      <span class="brand-mark">SC</span>
+      <span class="brand-mark"><img src="assets/ieee-smart-cities-dallas-logo.png" alt="" aria-hidden="true"></span>
       <span class="brand-text">IEEE Smart Cities Dallas<small>From Chips to Cities</small></span>
     </a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
-    <div class="nav-links">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
+    <div class="nav-links" id="primary-navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="tracks.html">Topic Tracks</a>
@@ -33,245 +42,639 @@
       <a href="sponsors.html">Sponsors</a>
       <a href="registration.html">Register</a>
       <a href="contact.html">Contact</a>
-      <a class="nav-cta" href="call-for-speakers.html#submit">Submit Proposal</a>
+      <a class="nav-cta" href="call-for-speakers.html#submit" data-sessionize>Submit Proposal</a>
     </div>
   </nav>
 </header>
 
-<section class="section" style="padding-top:48px;">
+<main id="main-content">
+<!-- 1. Headline + 2. Purpose -->
+<section class="section" style="padding-top:48px; padding-bottom:32px;">
   <div class="container">
-    <div class="section-header left">
-      <span class="eyebrow">Call for Speaker Proposals</span>
+    <div class="section-header left" style="margin-bottom:28px;">
+      <span class="eyebrow">Call for Speakers</span>
       <h1>Share your work at IEEE Smart Cities Dallas</h1>
       <p class="lead">
-        This is a <strong>speaker-only event</strong> this cycle &mdash; we are not running a paper
-        submission or peer-review process. We invite industry professionals, researchers,
-        public-sector leaders, students, WIE, YP, and community stakeholders to propose a session.
+        We invite industry professionals, researchers, public-sector leaders, educators,
+        entrepreneurs, students, Women in Engineering (WIE), Young Professionals (YP), and community
+        stakeholders to submit speaking proposals for IEEE Smart Cities Dallas. This is a
+        <strong>speaker-focused hybrid event</strong> designed to share practical insights, case
+        studies, emerging research, tools, demonstrations, and lessons learned across the smart-city
+        ecosystem &mdash; from semiconductors and AI infrastructure to energy, mobility, governance,
+        and community impact.
       </p>
     </div>
 
-    <div class="grid grid-2" style="margin-bottom:12px;">
+    <div class="deadline-strip">
+      <div class="is-key">
+        <strong>Sep 30, 2026</strong>
+        <span>Final proposal deadline &middot; 11:59 PM CT</span>
+      </div>
       <div>
-        <h3>Proposal types</h3>
-        <ul style="color:var(--text-muted); font-size:.95rem; padding-left:20px; line-height:1.9;">
-          <li>Technical talk</li>
-          <li>Industry case study</li>
-          <li>Panel discussion</li>
-          <li>Workshop or tutorial</li>
-          <li>Demonstration or showcase</li>
-          <li>Student lightning talk</li>
-          <li>Young Professional or WIE session</li>
+        <strong>Oct 12, 2026</strong>
+        <span>Speaker notifications</span>
+      </div>
+      <div>
+        <strong>Nov 21, 2026</strong>
+        <span>Live hybrid event</span>
+      </div>
+      <div>
+        <strong>Hybrid</strong>
+        <span>In person in Plano, TX or online</span>
+      </div>
+    </div>
+
+    <!-- 11a. Submit button near the top -->
+    <div class="btn-row" style="margin-top:8px;">
+      <a class="btn btn-primary" href="call-for-speakers.html#submit" data-sessionize>Submit Speaker Proposal</a>
+      <a class="btn btn-outline" href="#requirements">See what you need to prepare</a>
+    </div>
+
+    <nav aria-label="On this page" style="margin-top:40px;">
+      <ul class="anchor-nav">
+        <li><a href="#dates">Important Dates</a></li>
+        <li><a href="#who">Who Should Submit</a></li>
+        <li><a href="#types">Proposal Types</a></li>
+        <li><a href="#tracks">Topic Tracks</a></li>
+        <li><a href="#prepare">What to Prepare</a></li>
+        <li><a href="#requirements">Submission Requirements</a></li>
+        <li><a href="#criteria">Review Criteria</a></li>
+        <li><a href="#after">After Acceptance</a></li>
+        <li><a href="#submit">Submit</a></li>
+        <li><a href="#questions">Questions</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+<!-- 3. Important Dates -->
+<section class="section section-alt" id="dates" style="padding-top:56px;">
+  <div class="container">
+    <div class="section-header left">
+      <span class="eyebrow">Section 1</span>
+      <h2>Important dates</h2>
+      <p class="lead">
+        All deadlines are shown in <strong>Central Time (CT)</strong>. These dates are mirrored in
+        the Sessionize submission portal.
+      </p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th scope="col">Milestone</th>
+            <th scope="col">Date</th>
+            <th scope="col">Website / Sessionize instruction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Call for Speakers Opens</td>
+            <td class="date">Tuesday, August 25, 2026</td>
+            <td>Show the Submit Speaker Proposal button and route it to the live Sessionize page.</td>
+          </tr>
+          <tr>
+            <td>Priority Proposal Deadline</td>
+            <td class="date">Friday, September 18, 2026</td>
+            <td>Optional early-review deadline. Use this to encourage early submissions and begin reviewer assignment.</td>
+          </tr>
+          <tr class="is-key">
+            <td>Final Proposal Deadline</td>
+            <td class="date">Wednesday, September 30, 2026<br>11:59 PM CT</td>
+            <td>Public final deadline. Configure Sessionize closing date/time to match.</td>
+          </tr>
+          <tr>
+            <td>Review Period</td>
+            <td class="date">Thursday, October 1 &ndash;<br>Thursday, October 8, 2026</td>
+            <td>Committee reviews, scores, comments, and shortlist discussion.</td>
+          </tr>
+          <tr>
+            <td>Speaker Notifications</td>
+            <td class="date">Monday, October 12, 2026</td>
+            <td>Send accept / waitlist / decline decisions. Update website banner to &ldquo;Speaker notifications in progress.&rdquo;</td>
+          </tr>
+          <tr>
+            <td>Speaker Confirmation Due</td>
+            <td class="date">Friday, October 16, 2026<br>5:00 PM CT</td>
+            <td>Accepted speakers confirm participation, format, and delivery mode.</td>
+          </tr>
+          <tr>
+            <td>Preliminary Speaker Lineup Published</td>
+            <td class="date">Monday, October 26, 2026</td>
+            <td>Publish only confirmed speakers and confirmed session titles on the Speakers page.</td>
+          </tr>
+          <tr>
+            <td>Final Speaker Bio / Headshot / Session Copy Due</td>
+            <td class="date">Friday, October 30, 2026</td>
+            <td>Collect final website-ready material from accepted speakers.</td>
+          </tr>
+          <tr>
+            <td>Final Presentation Slides Due</td>
+            <td class="date">Friday, November 6, 2026<br>5:00 PM CT</td>
+            <td>Collect final slides two weeks before the live event. Keep backup copy for virtual sessions.</td>
+          </tr>
+          <tr>
+            <td>Virtual Speaker Tech Checks</td>
+            <td class="date">Monday, November 9 &ndash;<br>Thursday, November 12, 2026</td>
+            <td>Schedule short tech checks for virtual speakers and panelists.</td>
+          </tr>
+          <tr>
+            <td>Final Public Agenda Published</td>
+            <td class="date">Friday, November 13, 2026</td>
+            <td>Publish final session order, speaker names, and hybrid joining instructions as applicable.</td>
+          </tr>
+          <tr>
+            <td>Final Slide Revision Cutoff</td>
+            <td class="date">Wednesday, November 18, 2026<br>5:00 PM CT</td>
+            <td>Only minor corrections after this date; no major content changes.</td>
+          </tr>
+          <tr class="is-key">
+            <td>Conference Live Event</td>
+            <td class="date">Saturday, November 21, 2026</td>
+            <td>Final website should show venue, check-in, hybrid access, agenda, and speaker information.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:32px;">
+  <div class="container">
+
+    <!-- 4. Who should submit -->
+    <div class="section-header left" id="who">
+      <span class="eyebrow">Section 2</span>
+      <h2>Who should submit</h2>
+      <p class="lead">
+        You do not need to be an IEEE member, an academic, or a previous conference speaker to
+        propose a session. We are looking for people doing the work.
+      </p>
+    </div>
+    <div class="grid grid-3" style="margin-bottom:56px;">
+      <div class="card">
+        <div class="icon">&#127970;</div>
+        <h3>Industry &amp; startups</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">
+          Engineers, architects, product and program leaders, and founders building smart-city
+          technology, infrastructure, or services.
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">&#127979;</div>
+        <h3>Research &amp; education</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">
+          Researchers, faculty, educators, and graduate students working on any layer of the
+          smart-city stack.
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">&#127963;</div>
+        <h3>Public sector</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">
+          City, county, regional, and agency leaders responsible for planning, operations, utilities,
+          transportation, or digital services.
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">&#127891;</div>
+        <h3>Students</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">
+          Undergraduate and graduate students &mdash; the student lightning talk format is built for
+          first-time speakers.
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">&#128101;</div>
+        <h3>WIE &amp; YP</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">
+          Women in Engineering (WIE) and Young Professionals (YP) members, with dedicated sessions in
+          the program.
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">&#129309;</div>
+        <h3>Community stakeholders</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">
+          Nonprofit, civic, and community organizations working on equity, access, workforce, and
+          local impact.
+        </p>
+      </div>
+    </div>
+
+    <!-- 5. Proposal types -->
+    <div class="section-header left" id="types">
+      <span class="eyebrow">Section 3</span>
+      <h2>Proposal types and session lengths</h2>
+      <p class="lead">
+        Choose the format that fits your material. The committee may suggest a different format
+        &mdash; for example, converting a talk into a panel contribution &mdash; to balance the
+        program.
+      </p>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th scope="col">Format</th>
+            <th scope="col">Length</th>
+            <th scope="col">Best for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Technical talk</td>
+            <td class="date">20&ndash;25 min</td>
+            <td>Methods, architectures, results, and engineering detail.</td>
+          </tr>
+          <tr>
+            <td>Industry case study</td>
+            <td class="date">20&ndash;25 min</td>
+            <td>A real deployment: what you built, what it cost, what went wrong, what you learned.</td>
+          </tr>
+          <tr>
+            <td>Panel discussion</td>
+            <td class="date">40&ndash;45 min</td>
+            <td>A cross-disciplinary question that benefits from several perspectives.</td>
+          </tr>
+          <tr>
+            <td>Workshop or tutorial</td>
+            <td class="date">45&ndash;60 min</td>
+            <td>Hands-on skills, tooling walkthroughs, and frameworks attendees can apply.</td>
+          </tr>
+          <tr>
+            <td>Demonstration or showcase</td>
+            <td class="date">10&ndash;15 min</td>
+            <td>Showing a working system, prototype, or dataset live.</td>
+          </tr>
+          <tr>
+            <td>Student lightning talk</td>
+            <td class="date">5&ndash;10 min</td>
+            <td>Student projects, thesis work, and competition results. Ideal for a first talk.</td>
+          </tr>
+          <tr>
+            <td>Young Professional or WIE session</td>
+            <td class="date">20&ndash;45 min</td>
+            <td>Career, leadership, mentorship, and community-building sessions.</td>
+          </tr>
+          <tr>
+            <td>Virtual talk</td>
+            <td class="date">20&ndash;25 min</td>
+            <td>Any of the above delivered online &mdash; see the hybrid requirements below.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <strong>Speaker-only cycle.</strong> We are not running a paper submission or peer-review
+      process this cycle. There is no manuscript, no proceedings, and no publication requirement
+      &mdash; you are proposing a session, not a paper.
+    </div>
+
+    <!-- 6. Topics / tracks -->
+    <div class="section-header left" id="tracks" style="margin-top:56px;">
+      <span class="eyebrow">Section 4</span>
+      <h2>Topic tracks</h2>
+      <p class="lead">
+        Proposals are welcome under any of the eight topic tracks below. You will pick one track when
+        you submit; the committee may move your session to a closer-fitting track.
+      </p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3 style="font-size:1.05rem;">01 &middot; Smart City Services and Infrastructure</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">Physical and digital infrastructure, smart buildings, data centers, digital construction, asset management.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;">02 &middot; Sustainable Cities, Communities, and Climate Resilience</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">Climate resilience, sustainable planning, emergency response, environmental monitoring, green infrastructure.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;">03 &middot; Smart Energy, Grid, and Electrification</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">Smart grids, microgrids, renewables, storage, demand response, EV charging, data center energy demand.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;">04 &middot; Smart Mobility, Transportation, and Connected Systems</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">EV infrastructure, connected and autonomous vehicles, traffic optimization, transit, logistics, pedestrian safety.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;">05 &middot; Data Spaces, AI, Digital Twins, and Smart City Platforms</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">Urban data spaces, AI, digital twins, predictive analytics, open data, generative AI, data governance.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;">06 &middot; IoT, Sensors, Connectivity, Cybersecurity, and Privacy</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">IoT and sensors, 5G/6G, private networks, cyber-physical systems, cybersecurity, privacy, secure edge.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;">07 &middot; Semiconductor, AI Hardware, and Edge Intelligence</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">Chips, GPUs, AI accelerators, SoCs, mixed-signal design, low-power edge devices, hardware reliability.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;">08 &middot; Smart Governance, Health, Education, Workforce, and Community Impact</h3>
+        <p style="color:var(--text-muted); font-size:.92rem; margin:0;">Digital government services, healthcare, public safety, civic tech, accessibility, ethical AI, workforce.</p>
+      </div>
+    </div>
+    <p style="margin-top:18px;"><a href="tracks.html">See the full topic tracks page, with example topics and SDG mapping &rarr;</a></p>
+
+    <!-- 7. What to prepare -->
+    <div class="section-header left" id="prepare" style="margin-top:56px;">
+      <span class="eyebrow">Section 5</span>
+      <h2>What to prepare before you submit</h2>
+      <p class="lead">
+        Have these ready before you open the submission portal. Most applicants need 20&ndash;30
+        minutes to complete a proposal.
+      </p>
+    </div>
+    <div class="grid grid-2">
+      <div>
+        <ul class="check-list">
+          <li><strong>Session title</strong> &mdash; short and public-facing.</li>
+          <li><strong>Abstract</strong> &mdash; 150&ndash;300 words.</li>
+          <li><strong>Speaker bio</strong> &mdash; 100&ndash;150 words.</li>
+          <li><strong>Topic track</strong> &mdash; one of the eight tracks above.</li>
+          <li><strong>Proposal type and duration</strong> &mdash; see the format table.</li>
+          <li><strong>Delivery mode</strong> &mdash; in person, virtual, or either.</li>
         </ul>
       </div>
       <div>
-        <h3>Before you submit</h3>
-        <ul style="color:var(--text-muted); font-size:.95rem; padding-left:20px; line-height:1.9;">
-          <li>Review the <a href="tracks.html">topic tracks</a> and choose the closest fit.</li>
-          <li>Identify at least one UN SDG your session connects to, and be ready to briefly explain the connection.</li>
-          <li>Have a short bio and abstract ready (see field lengths below).</li>
-          <li>A headshot or LinkedIn link is optional but appreciated.</li>
+        <ul class="check-list">
+          <li><strong>Audience takeaways</strong> &mdash; 3&ndash;5 bullet points.</li>
+          <li><strong>Target audience and technical level.</strong></li>
+          <li><strong>Primary UN SDG</strong> plus a 75&ndash;150 word explanation of the connection.</li>
+          <li><strong>LinkedIn profile or website</strong> &mdash; recommended.</li>
+          <li><strong>Headshot</strong> &mdash; optional now, required if accepted.</li>
+          <li><strong>Prior speaking link or short video pitch</strong> &mdash; optional.</li>
         </ul>
       </div>
     </div>
 
     <div class="callout">
-      <strong>UN SDG alignment.</strong> Every proposal is asked to identify at least one UN
-      Sustainable Development Goal and briefly explain the connection between the goal and the
-      proposed session.
+      <strong>UN SDG alignment.</strong> Every proposal identifies at least one UN Sustainable
+      Development Goal and briefly explains the connection between that goal and the proposed
+      session. This is how the program connects technical work to community and global impact
+      &mdash; a short, specific explanation is worth more than a long, general one.
     </div>
 
-    <div class="section-header left" style="margin-top:56px;">
-      <span class="eyebrow">How it works</span>
-      <h2>Simple review workflow</h2>
-    </div>
-    <ol class="steps" style="max-width:760px;">
-      <li><strong>Submit your proposal</strong> using the form below.</li>
-      <li><strong>Your response is recorded</strong> by the Technical Program committee for review.</li>
-      <li><strong>A reviewer or committee owner is assigned</strong> and scores the proposal against the review rubric.</li>
-      <li><strong>The committee decides:</strong> accept, panel, workshop, revise, waitlist, or decline.</li>
-      <li><strong>Accepted speakers receive a confirmation email</strong> and are added to the Speakers and Agenda pages.</li>
-    </ol>
-  </div>
-</section>
-
-<section class="section section-alt" id="submit">
-  <div class="container">
-    <div class="section-header">
-      <span class="eyebrow">Speaker Proposal Form</span>
-      <h2>Submit your proposal</h2>
-      <p class="lead" style="margin:0 auto;">
-        Fields marked <strong>*</strong> are required. This should take about 10&ndash;15 minutes.
+    <!-- 8. Submission requirements -->
+    <div class="section-header left" id="requirements" style="margin-top:56px;">
+      <span class="eyebrow">Section 6</span>
+      <h2>Submission requirements</h2>
+      <p class="lead">
+        Each proposal should include a presentation title, 150&ndash;300 word abstract, speaker bio,
+        topic track, session format, audience level, 3&ndash;5 attendee takeaways, and a brief
+        explanation of how the session connects to at least one UN Sustainable Development Goal.
+        LinkedIn profiles, prior speaking links, headshots, and short video pitches are optional but
+        welcome. <strong>Commercial sales pitches will not be accepted.</strong>
       </p>
     </div>
 
-    <div class="form-card">
-      <div class="form-success">
-        Thanks &mdash; your proposal has been recorded. This is a preview form; the developer note
-        below explains how submissions will be connected to a live spreadsheet before launch.
+    <h3 style="margin-top:32px;">Speaker profile fields</h3>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th scope="col">Field</th>
+            <th scope="col">Required?</th>
+            <th scope="col">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Full name</td><td><span class="req required">Required</span></td><td>&mdash;</td></tr>
+          <tr><td>Email address</td><td><span class="req required">Required</span></td><td>Used for all committee correspondence.</td></tr>
+          <tr><td>Phone number</td><td><span class="req optional">Optional</span></td><td>Used only for accepted speakers and tech-check scheduling. Never displayed publicly.</td></tr>
+          <tr><td>Organization, company, or university</td><td><span class="req required">Required</span></td><td>&mdash;</td></tr>
+          <tr><td>Job title or role</td><td><span class="req required">Required</span></td><td>&mdash;</td></tr>
+          <tr><td>Speaker category</td><td><span class="req required">Required</span></td><td>Industry, academia, government/public sector, student, WIE, YP, startup, nonprofit/community, or other.</td></tr>
+          <tr><td>Short speaker bio</td><td><span class="req required">Required</span></td><td class="date">100&ndash;150 words</td></tr>
+          <tr><td>LinkedIn profile or website</td><td><span class="req optional">Recommended</span></td><td>A link helps reviewers assess speaker background.</td></tr>
+          <tr><td>Headshot</td><td><span class="req optional">Optional</span></td><td>Optional at submission; required after acceptance for the Speakers page.</td></tr>
+          <tr><td>Prior speaking link</td><td><span class="req optional">Optional</span></td><td>Recording, conference page, article, or portfolio.</td></tr>
+          <tr><td>Permission to list your profile on the website</td><td><span class="req required">Required</span></td><td>Consent checkbox. Only confirmed speakers are published.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:40px;">Session proposal fields</h3>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th scope="col">Field</th>
+            <th scope="col">Required?</th>
+            <th scope="col">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Session title</td><td><span class="req required">Required</span></td><td>Short and public-facing &mdash; this is what attendees see in the agenda.</td></tr>
+          <tr><td>Abstract or summary</td><td><span class="req required">Required</span></td><td class="date">150&ndash;300 words</td></tr>
+          <tr><td>Topic track</td><td><span class="req required">Required</span></td><td>One of the eight tracks above.</td></tr>
+          <tr><td>Proposal type</td><td><span class="req required">Required</span></td><td>Technical talk, case study, panel, workshop/tutorial, demo/showcase, student lightning talk, or YP/WIE session.</td></tr>
+          <tr><td>Preferred delivery mode</td><td><span class="req required">Required</span></td><td>In person, virtual, or either.</td></tr>
+          <tr><td>Preferred format and duration</td><td><span class="req required">Required</span></td><td>See the format table above.</td></tr>
+          <tr><td>Audience takeaways</td><td><span class="req required">Required</span></td><td class="date">3&ndash;5 bullets</td></tr>
+          <tr><td>Target audience</td><td><span class="req required">Required</span></td><td>Executives, engineers, researchers, students, public sector, startups, project managers, and similar.</td></tr>
+          <tr><td>Technical level</td><td><span class="req required">Required</span></td><td>Introductory, intermediate, advanced, or mixed.</td></tr>
+          <tr><td>Primary UN SDG</td><td><span class="req required">Required</span></td><td>For example SDG 7, SDG 9, SDG 11, or SDG 13.</td></tr>
+          <tr><td>Additional UN SDGs</td><td><span class="req optional">Optional</span></td><td>&mdash;</td></tr>
+          <tr><td>SDG explanation</td><td><span class="req required">Required</span></td><td class="date">75&ndash;150 words</td></tr>
+          <tr><td>Co-speakers or panelists</td><td><span class="req optional">If applicable</span></td><td>Names, emails, and affiliations. Panel line-ups can be completed after acceptance.</td></tr>
+          <tr><td>Video pitch</td><td><span class="req optional">Optional</span></td><td>A 2&ndash;3 minute link. Never required, and its absence does not count against a proposal.</td></tr>
+          <tr><td>Special AV needs</td><td><span class="req optional">Optional</span></td><td>Collected in detail after acceptance.</td></tr>
+          <tr><td>No-sales-pitch confirmation</td><td><span class="req required">Required</span></td><td>Checkbox: &ldquo;I understand this session must be educational and not a commercial sales pitch.&rdquo;</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 9. Review criteria -->
+    <div class="section-header left" id="criteria" style="margin-top:56px;">
+      <span class="eyebrow">Section 7</span>
+      <h2>How proposals are reviewed</h2>
+      <p class="lead">
+        Proposals are reviewed by the Technical Program Committee using the rubric below, based on
+        relevance to the event theme, practical value to attendees, speaker experience, originality
+        of the topic, and clarity of the abstract and learning outcomes. Each proposal receives at
+        least two independent reviews before the committee decision.
+      </p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th scope="col">Criterion</th>
+            <th scope="col">Weight</th>
+            <th scope="col">What reviewers look for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Relevance to smart cities and the event theme</td>
+            <td class="weight">25%</td>
+            <td>Fits one or more event tracks and clearly connects to smart cities, infrastructure, technology, sustainability, community impact, or &ldquo;chips to cities.&rdquo;</td>
+          </tr>
+          <tr>
+            <td>Practical value to attendees</td>
+            <td class="weight">25%</td>
+            <td>Offers lessons learned, frameworks, case studies, tools, demonstrations, or actionable insight rather than generic statements.</td>
+          </tr>
+          <tr>
+            <td>Speaker credibility and experience</td>
+            <td class="weight">20%</td>
+            <td>Relevant professional, academic, public-sector, student, startup, or community experience appropriate to the session.</td>
+          </tr>
+          <tr>
+            <td>Originality and freshness</td>
+            <td class="weight">15%</td>
+            <td>A timely, distinctive, cross-disciplinary, or emerging perspective; avoids generic or recycled content.</td>
+          </tr>
+          <tr>
+            <td>Clarity of abstract and takeaways</td>
+            <td class="weight">15%</td>
+            <td>Title, abstract, and learning outcomes are understandable, structured, and appropriate for the stated audience.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="color:var(--text-muted); font-size:.95rem; max-width:62ch;">
+      Each criterion is scored 1&ndash;5, where 5 is a strong accept and 1 is not appropriate for
+      this program. Depending on program fit, the committee may accept a proposal as an individual
+      talk, a panel contribution, a workshop, a demo, or a lightning talk, or place it on the
+      waitlist. A strong topic from a first-time speaker is welcome &mdash; a clear abstract with
+      specific takeaways matters more than a long speaking history.
+    </p>
+
+    <div class="callout amber">
+      <strong>No sales pitches.</strong> Sessions must be educational. Proposals that are primarily
+      a product or service pitch may be declined regardless of score, or returned with a request to
+      reframe the material as an educational case study.
+    </div>
+
+    <!-- 10. After acceptance -->
+    <div class="section-header left" id="after" style="margin-top:56px;">
+      <span class="eyebrow">Section 8</span>
+      <h2>What happens after acceptance</h2>
+      <p class="lead">
+        Accepted speakers confirm participation by <strong>October 16, 2026</strong>, provide final
+        speaker details by <strong>October 30, 2026</strong>, and submit final presentation slides by
+        <strong>November 6, 2026</strong>. Virtual speakers complete a technology check between
+        November 9 and November 12, 2026. Final slide revisions are due no later than
+        <strong>November 18, 2026</strong>.
+      </p>
+    </div>
+
+    <ol class="steps" style="max-width:820px;">
+      <li><strong>Confirm your participation</strong> by Friday, October 16, 2026, 5:00 PM CT &mdash; including your session format and whether you will present in person or online.</li>
+      <li><strong>Send final speaker material</strong> by Friday, October 30, 2026 &mdash; website-ready bio, headshot, and final session title and description.</li>
+      <li><strong>Submit final slides</strong> by Friday, November 6, 2026, 5:00 PM CT. The committee retains a backup copy to protect event-day continuity.</li>
+      <li><strong>Complete a technology check</strong> between November 9 and November 12, 2026 if you are presenting online or joining a hybrid panel.</li>
+      <li><strong>Confirm recording permission</strong> &mdash; optional. Sessions are only recorded or shared with your written consent.</li>
+      <li><strong>Keep the session educational</strong> &mdash; no commercial sales pitches, as agreed at submission.</li>
+      <li><strong>Send minor slide corrections</strong> by Wednesday, November 18, 2026, 5:00 PM CT. No major content changes after this point.</li>
+    </ol>
+
+    <div class="section-header left" style="margin:56px 0 24px;">
+      <span class="eyebrow">Hybrid event</span>
+      <h2>Presenting in person or online</h2>
+      <p class="lead">
+        IEEE Smart Cities Dallas is a <strong>hybrid regional event</strong>. You may propose to
+        present in person in Plano, Texas or online, and you can tell us that either works.
+      </p>
+    </div>
+    <div class="grid grid-2">
+      <div class="mode-card">
+        <span class="mode-label">In-person speakers</span>
+        <h3>At Collin College &ndash; Plano Campus Conference Center</h3>
+        <ul>
+          <li>Arrive for speaker check-in ahead of your session block.</li>
+          <li>Final slides submitted by November 6, 2026 and loaded on the venue system in advance.</li>
+          <li>Bring your own adapters if you plan to present from your own laptop.</li>
+          <li>Tell us about special AV needs as early as possible after acceptance.</li>
+        </ul>
+      </div>
+      <div class="mode-card virtual">
+        <span class="mode-label">Virtual speakers</span>
+        <h3>Presenting online</h3>
+        <ul>
+          <li>A stable internet connection, working webcam and microphone, and a quiet presentation environment.</li>
+          <li>A required technology check between November 9 and November 12, 2026.</li>
+          <li>Final slides submitted in advance; the committee may request backup slides to support event-day continuity.</li>
+          <li>Backup contact details &mdash; a phone number or alternate email &mdash; in case of connection trouble on the day.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 11b. Submit button near the bottom -->
+<section class="section section-alt" id="submit">
+  <div class="container">
+    <div class="submit-block">
+      <span class="eyebrow">Submit</span>
+      <h2>Submit your speaker proposal</h2>
+      <p style="color:var(--text-muted); max-width:52ch; margin:0 auto;">
+        Proposals are submitted and reviewed through Sessionize, our submission portal. The portal
+        closes <strong>Wednesday, September 30, 2026 at 11:59 PM CT</strong>.
+      </p>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href="call-for-speakers.html#submit" data-sessionize data-sessionize-primary>Submit Speaker Proposal</a>
       </div>
 
-      <!--
-        DEVELOPER NOTE:
-        Per the committee's notes, the recommended path for this cycle is to link this button /
-        form to a Microsoft Form or Google Form so responses land directly in Excel or Google
-        Sheets (the proposal tracker). Two options:
-          1) Replace this <form> with an <iframe> embed of the chosen Google/Microsoft Form, or
-          2) Keep this HTML form and set the `action` attribute to a real endpoint (Google Form
-             POST URL, Formspree, or a custom backend), then confirm exports to Excel/CSV.
-        Until connected, this form only shows a front-end confirmation message (see js/main.js).
-      -->
-      <form data-form>
-        <div class="section-header left" style="margin:0 0 16px;"><h3 style="margin:0;">Contact Information</h3></div>
-        <div class="form-grid">
-          <div class="field">
-            <label for="full-name">Full name *</label>
-            <input type="text" id="full-name" name="full-name" required>
-          </div>
-          <div class="field">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="field">
-            <label for="phone">Phone number</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-          <div class="field">
-            <label for="category">Speaker category *</label>
-            <select id="category" name="category" required>
-              <option value="">Select one&hellip;</option>
-              <option>Industry</option>
-              <option>Academic</option>
-              <option>Government / public agency</option>
-              <option>Student</option>
-              <option>Young Professional (YP)</option>
-              <option>Women in Engineering (WIE)</option>
-              <option>Startup</option>
-              <option>Community organization</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="field full">
-            <label for="organization">Organization and job title *</label>
-            <input type="text" id="organization" name="organization" placeholder="e.g., Jane Doe, Principal Engineer, Acme Corp" required>
-          </div>
-        </div>
+      <!-- Shown only while config.sessionizeUrl is empty. See js/config.js. -->
+      <div class="callout amber" data-sessionize-pending style="text-align:left; margin-top:24px;">
+        <strong>Submission link coming shortly.</strong> The Sessionize submission portal for this
+        event is being finalized. Email
+        <a data-email data-email-text href="mailto:smartcities.dallas@ieee.org">smartcities.dallas@ieee.org</a>
+        and we will send you the submission link as soon as it is live. Nothing on this page records
+        a proposal &mdash; please do not treat this as a submitted proposal.
+      </div>
 
-        <div class="section-header left" style="margin:24px 0 16px;"><h3 style="margin:0;">Session Details</h3></div>
-        <div class="form-grid">
-          <div class="field full">
-            <label for="session-title">Proposed session title *</label>
-            <input type="text" id="session-title" name="session-title" required>
-          </div>
-          <div class="field">
-            <label for="track">Preferred topic track *</label>
-            <select id="track" name="track" required>
-              <option value="">Select one&hellip;</option>
-              <option>Smart City Services and Infrastructure</option>
-              <option>Sustainable Cities, Communities, and Climate Resilience</option>
-              <option>Smart Energy, Grid, and Electrification</option>
-              <option>Smart Mobility, Transportation, and Connected Systems</option>
-              <option>Data Spaces, AI, Digital Twins, and Smart City Platforms</option>
-              <option>IoT, Sensors, Connectivity, Cybersecurity, and Privacy</option>
-              <option>Semiconductor, AI Hardware, and Edge Intelligence for Smart Cities</option>
-              <option>Smart Governance, Health, Education, Workforce, and Community Impact</option>
-              <option>Not sure / other</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="proposal-type">Proposal type *</label>
-            <select id="proposal-type" name="proposal-type" required>
-              <option value="">Select one&hellip;</option>
-              <option>Technical talk</option>
-              <option>Industry case study</option>
-              <option>Panel discussion</option>
-              <option>Workshop or tutorial</option>
-              <option>Demonstration or showcase</option>
-              <option>Student lightning talk</option>
-              <option>Young Professional or WIE session</option>
-            </select>
-          </div>
-          <div class="field full">
-            <label for="abstract">Abstract or summary * <span class="hint">(150&ndash;300 words)</span></label>
-            <textarea id="abstract" name="abstract" required></textarea>
-          </div>
-          <div class="field full">
-            <label for="takeaways">Audience takeaways * <span class="hint">(3&ndash;5 takeaways, one per line)</span></label>
-            <textarea id="takeaways" name="takeaways" required></textarea>
-          </div>
-          <div class="field">
-            <label for="level">Technical level *</label>
-            <select id="level" name="level" required>
-              <option value="">Select one&hellip;</option>
-              <option>Introductory</option>
-              <option>Intermediate</option>
-              <option>Advanced</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="format">Preferred format *</label>
-            <select id="format" name="format" required>
-              <option value="">Select one&hellip;</option>
-              <option>In-person</option>
-              <option>Virtual</option>
-              <option>Hybrid</option>
-              <option>Flexible</option>
-            </select>
-          </div>
-        </div>
+      <p class="fine-print" data-sessionize-ready hidden>
+        The button opens Sessionize. You can save a draft there and return to it before the deadline.
+      </p>
 
-        <div class="section-header left" style="margin:24px 0 16px;"><h3 style="margin:0;">UN SDG Alignment</h3></div>
-        <div class="form-grid">
-          <div class="field">
-            <label for="sdg-primary">Primary UN SDG *</label>
-            <input type="text" id="sdg-primary" name="sdg-primary" placeholder="e.g., SDG 11" required>
-          </div>
-          <div class="field">
-            <label for="sdg-additional">Additional UN SDGs <span class="hint">(if applicable)</span></label>
-            <input type="text" id="sdg-additional" name="sdg-additional" placeholder="e.g., SDG 7, SDG 13">
-          </div>
-          <div class="field full">
-            <label for="sdg-explanation">SDG alignment explanation * <span class="hint">(75&ndash;150 words)</span></label>
-            <textarea id="sdg-explanation" name="sdg-explanation" required></textarea>
-          </div>
-        </div>
-
-        <div class="section-header left" style="margin:24px 0 16px;"><h3 style="margin:0;">Speaker Bio</h3></div>
-        <div class="form-grid">
-          <div class="field full">
-            <label for="bio">Short speaker bio * <span class="hint">(100&ndash;150 words)</span></label>
-            <textarea id="bio" name="bio" required></textarea>
-          </div>
-          <div class="field full">
-            <label for="headshot">Headshot or LinkedIn link <span class="hint">(optional)</span></label>
-            <input type="text" id="headshot" name="headshot" placeholder="Link to headshot image or LinkedIn profile">
-          </div>
-        </div>
-
-        <div class="checkbox-field">
-          <input type="checkbox" id="panel-open" name="panel-open">
-          <label for="panel-open">I'm open to joining a panel discussion, in addition to my proposed session.</label>
-        </div>
-        <div class="checkbox-field">
-          <input type="checkbox" id="mentor" name="mentor">
-          <label for="mentor">I'm willing to mentor students / Young Professionals.</label>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-block">Submit Speaker Proposal</button>
-        <p class="form-note">
-          By submitting, you agree that the Technical Program committee may contact you about
-          scheduling, review status, and additional details (AV needs, bio, headshot) if accepted.
-        </p>
-      </form>
+      <p class="fine-print">
+        <strong>Privacy.</strong> Information you submit is used by the Technical Program Committee
+        to review proposals, plan the program, and contact you about your session. Only the name,
+        organization, bio, headshot, and session details of <em>confirmed</em> speakers are published
+        on this website, and only with your consent. Phone numbers and email addresses are never
+        published.
+      </p>
     </div>
   </div>
 </section>
+
+<!-- 12. Questions -->
+<section class="section" id="questions">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Questions about submitting?</h2>
+      <p>
+        Email the conference committee and we will get back to you. Please reach out before the
+        September 30 deadline if anything about the process is unclear &mdash; we would rather answer
+        a question than lose a good proposal.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-secondary" data-email data-email-subject="Call for Speakers question" href="mailto:smartcities.dallas@ieee.org"><span data-email-plain>smartcities.dallas@ieee.org</span></a>
+        <a class="btn btn-outline" style="color:#fff; border-color:#fff;" href="tracks.html">Browse topic tracks</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div>
         <h4>IEEE Smart Cities Dallas</h4>
-        <p>From Chips to Cities: Building Smart, Resilient, and Connected Communities. A regional IEEE Smart Cities technical event planned for Plano, TX.</p>
+        <p>From Chips to Cities: Building Smart, Resilient, and Connected Communities. A regional IEEE Smart Cities hybrid technical event at Collin College &ndash; Plano Campus Conference Center, Plano, TX &mdash; Saturday, November 21, 2026.</p>
+        <p style="margin:14px 0 0;"><a data-email data-email-text href="mailto:smartcities.dallas@ieee.org">smartcities.dallas@ieee.org</a></p>
       </div>
       <div>
         <h4>Event</h4>
@@ -282,19 +685,20 @@
       </div>
       <div>
         <h4>Get Involved</h4>
-        <a href="call-for-speakers.html">Submit a Proposal</a>
+        <a href="call-for-speakers.html">Call for Speakers</a>
         <a href="sponsors.html">Sponsors</a>
         <a href="registration.html">Register / Interest List</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; <span id="year"></span> IEEE Smart Cities Dallas. All event details are proposed and subject to committee approval.</span>
+      <span>&copy; <span id="year"></span> IEEE Smart Cities Dallas.<span data-draft-notice> Event details are subject to committee approval.</span></span>
       <span>IEEE is a registered trademark. This is not an official IEEE web property unless otherwise noted.</span>
     </div>
   </div>
 </footer>
 
+<script src="js/config.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

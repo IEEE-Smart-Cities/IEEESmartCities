@@ -3,27 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — IEEE Smart Cities Dallas</title>
-<meta name="description" content="Contact the IEEE Smart Cities Dallas committee about speaking, sponsoring, attending, or volunteering.">
+<title>Contact â€” IEEE Smart Cities Dallas</title>
+<meta name="description" content="Contact the IEEE Smart Cities Dallas committee about speaking, sponsoring, attending, or volunteering at the November 21, 2026 hybrid event.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#0A0A0F">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IEEE Smart Cities Dallas">
+<meta property="og:image" content="assets/ieee-smart-cities-dallas-social.png">
+<meta property="og:image:alt" content="IEEE Smart Cities Dallas â€” From Chips to Cities â€” Hybrid Event, November 21, 2026">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/ieee-smart-cities-dallas-logo.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<div class="status-banner">
-  Working draft site — contact routing is proposed and subject to committee approval.
+<div class="status-banner" data-status-banner role="status" aria-live="polite">
+  <span data-status-text>Call for Speakers is open â€” proposals due Wednesday, September 30, 2026, 11:59 PM CT.</span>
+  <a href="call-for-speakers.html" data-status-link>Submit a proposal â†’</a>
 </div>
 
 <header class="site-header">
   <nav class="nav">
     <a class="brand" href="index.html">
-      <span class="brand-mark">SC</span>
+      <span class="brand-mark"><img src="assets/ieee-smart-cities-dallas-logo.png" alt="" aria-hidden="true"></span>
       <span class="brand-text">IEEE Smart Cities Dallas<small>From Chips to Cities</small></span>
     </a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
-    <div class="nav-links">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
+    <div class="nav-links" id="primary-navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="tracks.html">Topic Tracks</a>
@@ -33,54 +42,70 @@
       <a href="sponsors.html">Sponsors</a>
       <a href="registration.html">Register</a>
       <a href="contact.html">Contact</a>
-      <a class="nav-cta" href="call-for-speakers.html#submit">Submit Proposal</a>
+      <a class="nav-cta" href="call-for-speakers.html#submit" data-sessionize>Submit Proposal</a>
     </div>
   </nav>
 </header>
 
+<main id="main-content">
 <section class="section" style="padding-top:48px;">
   <div class="container">
     <div class="section-header">
       <span class="eyebrow">Contact</span>
       <h1>Get in touch</h1>
       <p class="lead" style="margin:0 auto;">
-        Have a question about speaking, sponsoring, attending, or volunteering? Send us a message
-        and the right committee member will follow up.
+        Speaker questions, sponsor questions, and general enquiries all go to one official shared
+        conference email &mdash; the same address used in the submission portal and in our outreach.
       </p>
     </div>
 
     <div class="grid grid-3" style="margin-bottom:48px;">
       <div class="card" style="text-align:center;">
         <div class="icon" style="margin:0 auto 14px;">&#9993;</div>
-        <h3>Email</h3>
-        <!-- DEVELOPER NOTE: replace with the committee's approved contact email -->
+        <h3>Official email</h3>
         <p style="color:var(--text-muted); font-size:.92rem;">
-          <a href="mailto:smartcities.dallas@ieee.org">smartcities.dallas@ieee.org</a>
+          <a data-email data-email-text href="mailto:smartcities.dallas@ieee.org">smartcities.dallas@ieee.org</a>
         </p>
       </div>
       <div class="card" style="text-align:center;">
         <div class="icon" style="margin:0 auto 14px;">&#128205;</div>
-        <h3>Planned Venue</h3>
-        <p style="color:var(--text-muted); font-size:.92rem;">Collin College &ndash; Plano Campus Conference Center<br>Plano, TX, USA</p>
+        <h3>Venue</h3>
+        <p style="color:var(--text-muted); font-size:.92rem;">Collin College &ndash; Plano Campus Conference Center<br>Plano, TX, USA<br><em>or join online</em></p>
       </div>
       <div class="card" style="text-align:center;">
         <div class="icon" style="margin:0 auto 14px;">&#128197;</div>
-        <h3>Planned Date</h3>
-        <p style="color:var(--text-muted); font-size:.92rem;">November 21, 2026 (subject to confirmation)</p>
+        <h3>Event date</h3>
+        <p style="color:var(--text-muted); font-size:.92rem;">Saturday, November 21, 2026<br>Deadlines shown in Central Time (CT)</p>
       </div>
     </div>
 
+    <div class="callout" style="max-width:720px; margin-inline:auto;">
+      <strong>Submitting a speaker proposal?</strong> Proposals are not accepted by email &mdash;
+      they go through the submission portal so every proposal is reviewed on the same rubric. See the
+      <a href="call-for-speakers.html">Call for Speakers</a> page. Proposals close September 30, 2026.
+    </div>
+
+    <!--
+      DEVELOPER NOTE â€” contact form
+      =============================
+      This form does NOT post anywhere and stores nothing. On submit it
+      composes a pre-filled message to the shared conference email
+      (js/config.js â†’ email) and hands it to the visitor's mail app.
+      Nothing tells the visitor their message was "recorded".
+
+      If the committee later approves a real backend (Formspree, a
+      Microsoft/Google Form, or a custom endpoint), replace this block
+      and drop the data-mailform attribute.
+    -->
     <div class="form-card">
-      <div class="form-success">
-        Thanks &mdash; your message has been recorded. This is a preview form; see the developer
-        note below for connecting it to a real inbox before launch.
+      <div class="form-handoff">
+        <strong>Your email app should now be open</strong> with a pre-filled message &mdash; press
+        send to reach the committee. If nothing opened, copy your message into an email to
+        <a data-email data-email-text href="mailto:smartcities.dallas@ieee.org">smartcities.dallas@ieee.org</a>.
+        Your text is still filled in here.
       </div>
 
-      <!--
-        DEVELOPER NOTE: connect this form to a real destination before launch, e.g. a mailto
-        fallback, Formspree, or a backend endpoint. See README.md.
-      -->
-      <form data-form>
+      <form data-mailform data-subject="Website enquiry â€” IEEE Smart Cities Dallas">
         <div class="form-grid">
           <div class="field">
             <label for="c-name">Name *</label>
@@ -94,11 +119,12 @@
             <label for="c-category">I'm reaching out about *</label>
             <select id="c-category" name="category" required>
               <option value="">Select one&hellip;</option>
-              <option>Speaker proposal</option>
+              <option>Speaker question</option>
               <option>Sponsorship</option>
-              <option>Attending</option>
+              <option>Attending / registration</option>
               <option>Volunteering</option>
               <option>Student / YP / WIE</option>
+              <option>Media / press</option>
               <option>General question</option>
             </select>
           </div>
@@ -107,18 +133,29 @@
             <textarea id="c-message" name="message" required></textarea>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+
+        <button type="submit" class="btn btn-primary btn-block">Compose email to the committee</button>
+
+        <p class="privacy-note">
+          <strong>How this works.</strong> This page stores nothing. Selecting the button above opens
+          your own email app with your message pre-filled &mdash; nothing is sent until you press
+          send. <strong>Privacy.</strong> Your message and contact details are used only to respond to
+          your enquiry and are not published, sold, or shared outside the conference committee.
+        </p>
       </form>
     </div>
   </div>
 </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div>
         <h4>IEEE Smart Cities Dallas</h4>
-        <p>From Chips to Cities: Building Smart, Resilient, and Connected Communities. A regional IEEE Smart Cities technical event planned for Plano, TX.</p>
+        <p>From Chips to Cities: Building Smart, Resilient, and Connected Communities. A regional IEEE Smart Cities hybrid technical event at Collin College &ndash; Plano Campus Conference Center, Plano, TX &mdash; Saturday, November 21, 2026.</p>
+        <p style="margin:14px 0 0;"><a data-email data-email-text href="mailto:smartcities.dallas@ieee.org">smartcities.dallas@ieee.org</a></p>
       </div>
       <div>
         <h4>Event</h4>
@@ -129,19 +166,20 @@
       </div>
       <div>
         <h4>Get Involved</h4>
-        <a href="call-for-speakers.html">Submit a Proposal</a>
+        <a href="call-for-speakers.html">Call for Speakers</a>
         <a href="sponsors.html">Sponsors</a>
         <a href="registration.html">Register / Interest List</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; <span id="year"></span> IEEE Smart Cities Dallas. All event details are proposed and subject to committee approval.</span>
+      <span>&copy; <span id="year"></span> IEEE Smart Cities Dallas.<span data-draft-notice> Event details are subject to committee approval.</span></span>
       <span>IEEE is a registered trademark. This is not an official IEEE web property unless otherwise noted.</span>
     </div>
   </div>
 </footer>
 
+<script src="js/config.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

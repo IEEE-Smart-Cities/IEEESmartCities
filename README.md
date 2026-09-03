@@ -8,12 +8,8 @@ Static site (plain HTML/CSS/JS, no build step). Built from
 Open `index.html` directly in a browser, or serve the folder so relative
 paths behave the same as production:
 
-```
-cd site
-python -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
+Serve the project root with any static web server, then visit its local URL.
+The site files live in the project root; the `site/` folder is not used.
 
 ## Structure
 
