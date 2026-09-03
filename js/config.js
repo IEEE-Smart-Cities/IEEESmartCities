@@ -20,7 +20,7 @@ window.SC_CONFIG = {
      page shows an "link coming shortly" notice with the shared
      email. Nothing on the site pretends a submission was recorded.
   ----------------------------------------------------------- */
-  sessionizeUrl: 'https://sessionize.com/jeee-smart-cities-dallas-2826/dashboard',
+  sessionizeUrl: 'https://sessionize.com/ieee-smart-cities-dallas-2026',
 
   /* -----------------------------------------------------------
      2. OFFICIAL SHARED CONFERENCE EMAIL

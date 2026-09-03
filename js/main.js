@@ -55,7 +55,7 @@
        Active nav link
        --------------------------------------------------------- */
     var current = window.location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('.nav-links a').forEach(function (a) {
+    document.querySelectorAll('.nav-links a:not([data-sessionize])').forEach(function (a) {
       var href = (a.getAttribute('href') || '').split('#')[0];
       if (href === current) {
         a.classList.add('active');
