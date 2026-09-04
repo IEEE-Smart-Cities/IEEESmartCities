@@ -1,4 +1,4 @@
-// IEEE Smart Cities Dallas — shared site behavior
+// IEEE Smart Cities — shared site behavior
 // Reads every configurable value from js/config.js (loaded first on each page).
 
 (function () {
@@ -158,11 +158,11 @@
           cta: 'View speakers', href: 'speakers.html' },
 
         { until: on(D.eventDay), cls: 'is-open', text:
-            'Final agenda is published. IEEE Smart Cities Dallas is Saturday, November 21, 2026 — in person in Plano.',
+            'Final agenda is published. IEEE Smart Cities is Saturday, November 21, 2026 — in person in Plano.',
           cta: 'View the agenda', href: 'agenda.html' },
 
         { until: null, cls: 'is-open', text:
-            'IEEE Smart Cities Dallas — Saturday, November 21, 2026. Thank you to our speakers and attendees.',
+            'IEEE Smart Cities — Saturday, November 21, 2026. Thank you to our speakers and attendees.',
           cta: 'View the agenda', href: 'agenda.html' }
       ];
 

@@ -1,7 +1,7 @@
-# IEEE Smart Cities Dallas — Website
+# IEEE Smart Cities — Website
 
 Static site (plain HTML/CSS/JS, no build step). Built from
-`IEEE_Smart_Cities_Dallas_Website_Developer_Notes.md`.
+the event website developer notes.
 
 ## Run locally
 
