@@ -508,6 +508,26 @@ h3 { font-size: 1.2rem; margin: 0 0 .4rem; }
   margin: 0;
   color: var(--text-muted);
 }
+.committee-member {
+  display: block;
+}
+.committee-member + .committee-member {
+  margin-top: 18px;
+}
+.committee-member strong,
+.committee-member span {
+  display: block;
+}
+.committee-member strong {
+  color: var(--text);
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+.about-event-meta {
+  margin: 28px 0 18px;
+  color: var(--ieee-navy);
+}
 
 @media (max-width: 600px) {
   .committee-list > div {
@@ -1540,7 +1560,7 @@ main:has(> .hero)::before {
   }
 
   .hero h1 {
-    font-size: clamp(2.8rem, 14vw, 4.2rem);
+    font-size: clamp(2.5rem, 11vw, 3.4rem);
   }
 
   .hero::before {
@@ -1575,6 +1595,120 @@ main:has(> .hero)::before {
   .data-table th,
   .data-table td {
     padding: 14px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 24px;
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .timeline-table,
+  .timeline-table tbody,
+  .timeline-table tr,
+  .timeline-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .timeline-table {
+    min-width: 0;
+  }
+
+  .timeline-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .timeline-table tbody {
+    padding: 4px 0;
+  }
+
+  .timeline-table tbody tr {
+    padding: 13px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .timeline-table tbody tr:last-child {
+    border-bottom: 0;
+  }
+
+  .timeline-table td,
+  .timeline-table td:first-child,
+  .timeline-table .date {
+    padding: 2px 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .timeline-table .date {
+    color: var(--text-muted);
+    font-size: .82rem;
+    font-weight: 600;
+  }
+
+  .mobile-card-table,
+  .mobile-card-table tbody,
+  .mobile-card-table tr,
+  .mobile-card-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-card-table {
+    min-width: 0;
+  }
+
+  .mobile-card-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .mobile-card-table tbody {
+    padding: 6px 0;
+  }
+
+  .mobile-card-table tbody tr {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mobile-card-table tbody tr:last-child {
+    border-bottom: 0;
+  }
+
+  .mobile-card-table td,
+  .mobile-card-table td:first-child {
+    padding: 3px 0;
+    border: 0;
+  }
+
+  .mobile-card-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 2px;
+    color: var(--ieee-blue);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
   }
 }
 

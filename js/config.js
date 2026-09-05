@@ -29,7 +29,7 @@ window.SC_CONFIG = {
      in every mailto form. Must match the address configured in
      Sessionize and used in outreach messages.
   ----------------------------------------------------------- */
-  email: 'smartcities.dallas@ieee.org',
+  email: 'contact@ieeesmartcityconference.org',
 
   /* -----------------------------------------------------------
      3. PUBLIC MILESTONE DATES (Central Time)
@@ -40,18 +40,15 @@ window.SC_CONFIG = {
      page states, so those pages roll over on their own.
   ----------------------------------------------------------- */
   dates: {
-    cfsOpens:          '2026-08-25T00:00:00-05:00', // Tue Aug 25, 2026
-    priorityDeadline:  '2026-09-18T23:59:59-05:00', // Fri Sep 18, 2026
-    finalDeadline:     '2026-09-30T23:59:59-05:00', // Wed Sep 30, 2026, 11:59 PM CT
-    reviewEnds:        '2026-10-08T23:59:59-05:00', // Thu Oct 8, 2026
-    notifications:     '2026-10-12T09:00:00-05:00', // Mon Oct 12, 2026
-    confirmationDue:   '2026-10-16T17:00:00-05:00', // Fri Oct 16, 2026, 5:00 PM CT
-    lineupPublished:   '2026-10-26T09:00:00-05:00', // Mon Oct 26, 2026
-    speakerCopyDue:    '2026-10-30T23:59:59-05:00', // Fri Oct 30, 2026
-    slidesDue:         '2026-11-06T17:00:00-06:00', // Fri Nov 6, 2026, 5:00 PM CT
-    agendaPublished:   '2026-11-13T09:00:00-06:00', // Fri Nov 13, 2026
-    slideCutoff:       '2026-11-18T17:00:00-06:00', // Wed Nov 18, 2026, 5:00 PM CT
-    eventDay:          '2026-11-21T08:00:00-06:00'  // Sat Nov 21, 2026
+    cfsOpens:           '2026-09-05T00:00:00-05:00', // Sep 5, 2026
+    finalDeadline:      '2026-09-30T23:59:59-05:00', // Sep 30, 2026
+    notifications:      '2026-10-12T09:00:00-05:00', // Oct 12, 2026
+    confirmationDue:    '2026-10-16T23:59:59-05:00', // Oct 16, 2026
+    lineupPublished:    '2026-10-26T09:00:00-05:00', // Oct 26, 2026
+    slidesDue:          '2026-11-06T23:59:59-06:00', // Nov 6, 2026
+    virtualRecordedDue: '2026-11-10T23:59:59-06:00', // Nov 10, 2026
+    agendaPublished:    '2026-11-13T09:00:00-06:00', // Nov 13, 2026
+    eventDay:           '2026-11-21T08:00:00-06:00'  // Nov 21, 2026
   },
 
   /* -----------------------------------------------------------

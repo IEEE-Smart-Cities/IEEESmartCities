@@ -138,31 +138,43 @@
       var now = new Date();
       var phases = [
         { until: on(D.cfsOpens), cls: '', text:
-            'Call for Speakers opens Tuesday, August 25, 2026. In-person event: Saturday, November 21, 2026.',
+            'Call for Speaker Proposals opens September 5, 2026. Conference: November 21, 2026.',
           cta: 'Read the Call for Speakers', href: 'call-for-speakers.html' },
 
         { until: on(D.finalDeadline), cls: 'is-open', text:
-            'Call for Speakers is open — proposals due Wednesday, September 30, 2026, 11:59 PM CT.',
+            'Call for Speaker Proposals is open — submissions are due September 30, 2026.',
           cta: 'Submit a proposal', href: 'call-for-speakers.html' },
 
         { until: on(D.notifications), cls: 'is-review', text:
-            'Speaker proposals are now under review. Notifications go out Monday, October 12, 2026.',
+            'Speaker proposals are now under review. Speaker notification: October 12, 2026.',
+          cta: 'See the important dates', href: 'call-for-speakers.html#dates' },
+
+        { until: on(D.confirmationDue), cls: 'is-review', text:
+            'Speaker notifications have been sent. Speaker confirmation: October 16, 2026.',
           cta: 'See the important dates', href: 'call-for-speakers.html#dates' },
 
         { until: on(D.lineupPublished), cls: 'is-review', text:
-            'Speaker notifications are in progress. Preliminary lineup publishes Monday, October 26, 2026.',
+            'Speaker confirmations are complete. Preliminary speaker lineup: October 26, 2026.',
+          cta: 'See the important dates', href: 'call-for-speakers.html#dates' },
+
+        { until: on(D.slidesDue), cls: 'is-open', text:
+            'Preliminary speaker lineup is published. Final presentation materials: November 6, 2026.',
+          cta: 'View speakers', href: 'speakers.html' },
+
+        { until: on(D.virtualRecordedDue), cls: 'is-open', text:
+            'Final presentation materials are collected. Virtual/recorded presentations are due November 10, 2026.',
           cta: 'See the important dates', href: 'call-for-speakers.html#dates' },
 
         { until: on(D.agendaPublished), cls: 'is-open', text:
-            'Preliminary speaker lineup is published. Final public agenda publishes Friday, November 13, 2026.',
+            'Presentation materials are complete. Final agenda publishes November 13, 2026.',
           cta: 'View speakers', href: 'speakers.html' },
 
         { until: on(D.eventDay), cls: 'is-open', text:
-            'Final agenda is published. IEEE Smart Cities is Saturday, November 21, 2026 — in person in Plano.',
+            'Final agenda is published. IEEE Smart Cities Conference is November 21, 2026.',
           cta: 'View the agenda', href: 'agenda.html' },
 
         { until: null, cls: 'is-open', text:
-            'IEEE Smart Cities — Saturday, November 21, 2026. Thank you to our speakers and attendees.',
+            'IEEE Smart Cities Conference — November 21, 2026. Thank you to our speakers and attendees.',
           cta: 'View the agenda', href: 'agenda.html' }
       ];
 
