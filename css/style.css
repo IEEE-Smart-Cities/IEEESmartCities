@@ -925,38 +925,6 @@ h3 { font-size: 1.2rem; margin: 0 0 .4rem; }
 .deadline-strip div.is-key strong { color: #fff; }
 .deadline-strip div.is-key span { color: var(--accent-teal); }
 
-/* ---------- Checklist / prepare lists ---------- */
-.check-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 11px;
-}
-.check-list li {
-  position: relative;
-  padding-left: 30px;
-  color: var(--text-muted);
-  font-size: .94rem;
-}
-.check-list li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: -1px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: rgba(37,99,235,.12);
-  color: var(--ieee-blue);
-  font-size: .72rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.check-list li strong { color: var(--text); }
-
 /* ---------- Pending submit state (Sessionize URL not configured) ---------- */
 .btn.is-pending {
   background: #fff;
@@ -1452,10 +1420,6 @@ main:has(> .hero)::before {
   border-color: var(--ieee-blue);
   background: #fff;
   color: var(--ieee-blue);
-}
-
-.check-list li::before {
-  background: var(--accent-teal);
 }
 
 .coming-soon {
