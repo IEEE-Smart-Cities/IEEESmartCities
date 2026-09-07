@@ -1800,7 +1800,7 @@ main:has(> .hero)::before {
   display: none;
   position: absolute;
   z-index: 50;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 0;
   min-width: 245px;
   padding: 8px;

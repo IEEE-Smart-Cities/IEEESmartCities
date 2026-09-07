@@ -77,6 +77,19 @@
         dropdown.classList.toggle('open', willOpen);
         button.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
       });
+
+      dropdown.addEventListener('mouseenter', function () {
+        if (window.innerWidth <= 1080) return;
+        closeDropdowns(dropdown);
+        dropdown.classList.add('open');
+        button.setAttribute('aria-expanded', 'true');
+      });
+
+      dropdown.addEventListener('mouseleave', function () {
+        if (window.innerWidth <= 1080) return;
+        dropdown.classList.remove('open');
+        button.setAttribute('aria-expanded', 'false');
+      });
     });
 
     document.addEventListener('click', function (e) {
