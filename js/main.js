@@ -142,7 +142,7 @@
           cta: 'Read the Call for Speakers', href: 'call-for-speakers.html' },
 
         { until: on(D.finalDeadline), cls: 'is-open', text:
-            'Call for Speaker Proposals is open — submissions are due September 30, 2026.',
+            'Call for Speaker Proposals is open — submissions are due September 30, 2026, at 11:59 PM CT.',
           cta: 'Submit a proposal', href: 'call-for-speakers.html' },
 
         { until: on(D.notifications), cls: 'is-review', text:

@@ -1,9 +1,9 @@
 /* ===========================================================
-   IEEE Smart Cities Dallas — single source of truth
+   2026 IEEE Smart City USA Conference — single source of truth
    -----------------------------------------------------------
    EDIT THIS FILE ONLY. Every Sessionize button, every published
    email address, and the sitewide banner read from here, so a
-   change here updates all nine pages at once.
+   change here updates all ten pages at once.
    =========================================================== */
 
 window.SC_CONFIG = {
@@ -55,7 +55,7 @@ window.SC_CONFIG = {
      4. DRAFT NOTICE
      -----------------------------------------------------------
      Leave true until the committee has signed off on date, venue
-     wording, IEEE branding/disclaimer language, technical sponsorship language,
+     wording, IEEE branding and sponsorship language,
      the shared email, and the Sessionize URL. When true, a short
      "subject to committee approval" line stays in the footer.
   ----------------------------------------------------------- */

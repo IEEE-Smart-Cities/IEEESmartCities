@@ -19,9 +19,9 @@
   --nav-width: 1380px;
   --shadow: 0 8px 24px rgba(21, 50, 72, 0.08);
   --shadow-lg: 0 24px 56px rgba(21, 50, 72, 0.14);
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-display: 'Manrope', var(--font-sans);
-  --font-condensed: 'Inter', var(--font-sans);
+  --font-sans: "Segoe UI", Calibri, Verdana, Arial, sans-serif;
+  --font-display: "Segoe UI", Calibri, Verdana, Arial, sans-serif;
+  --font-condensed: "Segoe UI", Calibri, Verdana, Arial, sans-serif;
   --font-mono: 'SFMono-Regular', Consolas, monospace;
 }
 
@@ -58,20 +58,6 @@ body {
 main {
   position: relative;
   isolation: isolate;
-}
-
-main::before {
-  content: "";
-  position: fixed;
-  top: 50%;
-  right: 3vw;
-  z-index: 2;
-  width: clamp(280px, 38vw, 560px);
-  aspect-ratio: 1;
-  background: url('../assets/ieee-smart-cities-event-logo.png') center / contain no-repeat;
-  opacity: .04;
-  pointer-events: none;
-  transform: translateY(-42%);
 }
 
 main .container {
@@ -1052,11 +1038,6 @@ h3 { font-size: 1.2rem; margin: 0 0 .4rem; }
 
 @media (max-width: 520px) {
   .brand { gap: 8px; }
-  main::before {
-    right: -12vw;
-    width: 76vw;
-    opacity: .035;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1187,13 +1168,6 @@ h2 {
   color: var(--ieee-navy);
 }
 
-main::before {
-  right: 2vw;
-  width: clamp(320px, 42vw, 650px);
-  opacity: .028;
-  filter: saturate(.65);
-}
-
 .section {
   padding: clamp(64px, 8vw, 104px) 0;
 }
@@ -1260,15 +1234,6 @@ main:has(> .hero)::before {
     radial-gradient(circle at 78% 24%, rgba(53,169,224,.24), transparent 27%),
     radial-gradient(circle at 18% 82%, rgba(0,156,166,.18), transparent 28%),
     linear-gradient(125deg, #061A2D 0%, #0A3554 58%, #00629B 120%);
-}
-
-.hero::before {
-  inset: auto 4vw 50%;
-  width: min(44vw, 590px);
-  height: min(44vw, 590px);
-  transform: translateY(50%);
-  background: url('../assets/ieee-smart-cities-event-logo.png') center / contain no-repeat;
-  opacity: .13;
 }
 
 .hero .container {
@@ -1499,6 +1464,63 @@ main:has(> .hero)::before {
   color: #B9D4E2;
 }
 
+.footer-standards {
+  display: grid;
+  grid-template-columns: minmax(120px, 150px) minmax(0, 1fr);
+  align-items: center;
+  gap: 28px;
+  padding: 26px 0;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.footer-standards p {
+  margin: 0 0 8px;
+  line-height: 1.6;
+}
+
+.footer-standards a { color: #D7ECF7; }
+
+.ieee-master-brand {
+  display: block;
+  padding: 8px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.ieee-master-brand img {
+  width: 130px;
+  height: auto;
+}
+
+.event-facts {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.event-facts > div {
+  display: grid;
+  grid-template-columns: minmax(120px, 170px) minmax(0, 1fr);
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.event-facts dt { font-weight: 700; color: var(--ieee-navy); }
+.event-facts dd { margin: 0; }
+.track-item .sdg-row { margin-top: 14px; }
+
+.compact-track-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 34px;
+  max-width: 980px;
+  margin: 22px 0;
+  padding-left: 24px;
+}
+
+.compact-track-list li { padding-left: 4px; }
+
 @media (max-width: 1080px) {
   .nav {
     min-height: 76px;
@@ -1543,17 +1565,10 @@ main:has(> .hero)::before {
     font-size: clamp(2.5rem, 11vw, 3.4rem);
   }
 
-  .hero::before {
-    right: -24vw;
-    width: 88vw;
-    height: 88vw;
-    opacity: .1;
-  }
-
-  main::before {
-    right: -20vw;
-    width: 88vw;
-    opacity: .022;
+  .footer-standards,
+  .event-facts > div,
+  .compact-track-list {
+    grid-template-columns: 1fr;
   }
 
   .btn-row .btn {
@@ -1709,4 +1724,31 @@ main:has(> .hero)::before {
     animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
   }
+}
+
+/* Production-review branding dimensions. */
+.footer-grid { grid-template-columns: 2fr repeat(3, 1fr); }
+
+.brand .brand-mark {
+  width: 150px;
+  height: 64px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.brand .brand-mark img {
+  position: static;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: none;
+}
+
+@media (max-width: 1080px) {
+  .brand .brand-mark { width: 110px; height: 50px; }
+}
+
+@media (max-width: 720px) {
+  .footer-grid { grid-template-columns: 1fr; }
 }
