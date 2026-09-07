@@ -51,6 +51,41 @@
       });
     }
 
+
+    /* ---------------------------------------------------------
+       Committee dropdown
+       --------------------------------------------------------- */
+    var dropdowns = document.querySelectorAll('[data-nav-dropdown]');
+
+    function closeDropdowns(except) {
+      dropdowns.forEach(function (dropdown) {
+        if (dropdown === except) return;
+        dropdown.classList.remove('open');
+        var button = dropdown.querySelector('.nav-dropdown-toggle');
+        if (button) button.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    dropdowns.forEach(function (dropdown) {
+      var button = dropdown.querySelector('.nav-dropdown-toggle');
+      if (!button) return;
+
+      button.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var willOpen = !dropdown.classList.contains('open');
+        closeDropdowns(dropdown);
+        dropdown.classList.toggle('open', willOpen);
+        button.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('[data-nav-dropdown]')) closeDropdowns();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeDropdowns();
+    });
     /* ---------------------------------------------------------
        Active nav link
        --------------------------------------------------------- */
@@ -60,6 +95,12 @@
       if (href === current) {
         a.classList.add('active');
         a.setAttribute('aria-current', 'page');
+
+        var parentDropdown = a.closest('[data-nav-dropdown]');
+        if (parentDropdown) {
+          var parentToggle = parentDropdown.querySelector('.nav-dropdown-toggle');
+          if (parentToggle) parentToggle.classList.add('active');
+        }
       }
     });
 

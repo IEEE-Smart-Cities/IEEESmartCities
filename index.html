@@ -32,7 +32,16 @@
     <div class="nav-links" id="primary-navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="program-committee.html">Program Committee</a>
+      <div class="nav-dropdown" data-nav-dropdown>
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+          Committee <span class="nav-dropdown-icon" aria-hidden="true">&#9662;</span>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="organizing-committee.html">Organizing Committee</a>
+          <a href="advisory-committee.html">Advisory Committee</a>
+          <a href="program-committee.html">Program Committee Members</a>
+        </div>
+      </div>
       <a href="tracks.html">Topic Tracks</a>
       <a href="call-for-speakers.html">Call for Speakers</a>
       <a href="agenda.html">Agenda</a>
@@ -68,6 +77,7 @@
     <div class="btn-row">
       <a class="btn btn-primary" href="call-for-speakers.html#submit" data-sessionize>Submit Speaker Proposal</a>
       <a class="btn btn-secondary" href="call-for-speakers.html">View Submission Details</a>
+      <a class="btn btn-secondary" href="assets/wylie-campus-map.pdf" target="_blank">View Venue Map</a>
     </div>
 
   </div>
@@ -100,6 +110,23 @@
   </div>
 </section>
 
+
+<section class="section section-alt" id="call-for-reviewers">
+  <div class="container">
+    <div class="reviewer-callout">
+      <span class="eyebrow">Call for Reviewers</span>
+      <h2>Help shape the technical program</h2>
+      <p class="lead">
+        Qualified professionals, researchers, and subject-matter experts are invited to review
+        speaker proposals for the 2026 IEEE Smart City USA Conference.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://forms.gle/RaFGpYPskjp5ZWM89" target="_blank" rel="noopener">Apply to Become a Reviewer</a>
+        <a class="btn btn-outline" href="program-committee.html">Program Committee Members</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 
 <footer class="site-footer">
@@ -113,7 +140,9 @@
       <div>
         <h4>Conference</h4>
         <a href="about.html">About</a>
-        <a href="program-committee.html">Program Committee</a>
+        <a href="organizing-committee.html">Organizing Committee</a>
+        <a href="advisory-committee.html">Advisory Committee</a>
+        <a href="program-committee.html">Program Committee Members</a>
         <a href="tracks.html">Topic Tracks</a>
         <a href="agenda.html">Agenda</a>
         <a href="speakers.html">Speakers</a>
@@ -122,6 +151,7 @@
       <div>
         <h4>Participation</h4>
         <a href="call-for-speakers.html">Call for Speakers</a>
+        <a href="program-committee.html#reviewers">Call for Reviewers</a>
         <a href="registration.html">Registration Updates</a>
         <a href="contact.html">Contact</a>
       </div>
