@@ -1,7 +1,7 @@
 # 2026 IEEE Smart City USA Conference — Website
 
 Static site (plain HTML/CSS/JS, no build step). Built from
-the event website developer notes.
+the conference website developer notes.
 
 ## Run locally
 
@@ -14,7 +14,7 @@ The site files live in the project root; the `site/` folder is not used.
 ## Structure
 
 - `index.html`, `about.html`, `program-committee.html`, `tracks.html`,
-  `call-for-speakers.html`, `contact.html` — main event pages.
+   `call-for-speakers.html`, `contact.html` — main conference pages.
 - `agenda.html`, `speakers.html`, `registration.html` — Phase 2/3 pages,
   currently "coming soon" / high-level placeholders.
 - `sponsors.html` — IEEE Smart Cities sponsorship acknowledgement retained for
@@ -47,7 +47,7 @@ committee member can edit text directly without a build process.
 
 - Keep `ieeesmartcityconference.org` on auto-renew and complete IEEE domain ownership
   transfer or obtain written approval from the IEEE Experience Design Team.
-- Keep the Sessionize event name, website, hybrid Wylie location, proposal formats,
+- Keep the Sessionize conference name, website, hybrid Wylie location, proposal formats,
   milestone dates, travel policy, and six-track list synchronized with this site.
 - Record written consent before publishing committee members, titles, affiliations,
   photographs, contact details, or biographies.

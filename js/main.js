@@ -223,7 +223,7 @@
             'Presentation materials are complete. Final agenda publishes November 13, 2026.',
           cta: 'View speakers', href: 'speakers.html' },
 
-        { until: on(D.eventDay), cls: 'is-open', text:
+        { until: on(D.conferenceDay), cls: 'is-open', text:
             'Final agenda is published. IEEE Smart Cities Conference is November 21, 2026.',
           cta: 'View the agenda', href: 'agenda.html' },
 

@@ -510,7 +510,7 @@ h3 { font-size: 1.2rem; margin: 0 0 .4rem; }
   margin-bottom: 3px;
 }
 
-.about-event-meta {
+.about-conference-meta {
   margin: 28px 0 18px;
   color: var(--ieee-navy);
 }
@@ -1053,7 +1053,7 @@ h3 { font-size: 1.2rem; margin: 0 0 .4rem; }
 /* ===========================================================
    2026 conference UI refresh
    Inspired by contemporary IEEE and academic conference sites:
-   clear editorial hierarchy, strong event actions, and calm surfaces.
+  clear editorial hierarchy, strong conference actions, and calm surfaces.
    =========================================================== */
 body {
   background: #F7FAFC;
@@ -1492,13 +1492,13 @@ main:has(> .hero)::before {
   height: auto;
 }
 
-.event-facts {
+.conference-facts {
   display: grid;
   gap: 12px;
   margin: 24px 0;
 }
 
-.event-facts > div {
+.conference-facts > div {
   display: grid;
   grid-template-columns: minmax(120px, 170px) minmax(0, 1fr);
   gap: 16px;
@@ -1506,8 +1506,8 @@ main:has(> .hero)::before {
   border-bottom: 1px solid var(--border);
 }
 
-.event-facts dt { font-weight: 700; color: var(--ieee-navy); }
-.event-facts dd { margin: 0; }
+.conference-facts dt { font-weight: 700; color: var(--ieee-navy); }
+.conference-facts dd { margin: 0; }
 .track-item .sdg-row { margin-top: 14px; }
 
 .compact-track-list {
@@ -1566,7 +1566,7 @@ main:has(> .hero)::before {
   }
 
   .footer-standards,
-  .event-facts > div,
+  .conference-facts > div,
   .compact-track-list {
     grid-template-columns: 1fr;
   }
