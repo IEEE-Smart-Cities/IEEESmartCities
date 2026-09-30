@@ -41,13 +41,13 @@ window.SC_CONFIG = {
   ----------------------------------------------------------- */
   dates: {
     cfsOpens:           '2026-09-05T00:00:00-05:00', // Sep 5, 2026
-   finalDeadline:      '2026-10-10T23:59:59-05:00', // Oct 10, 2026
-    notifications:      '2026-10-12T09:00:00-05:00', // Oct 12, 2026
-    confirmationDue:    '2026-10-16T23:59:59-05:00', // Oct 16, 2026
-    lineupPublished:    '2026-10-26T09:00:00-05:00', // Oct 26, 2026
-    slidesDue:          '2026-11-06T23:59:59-06:00', // Nov 6, 2026
-    virtualRecordedDue: '2026-11-10T23:59:59-06:00', // Nov 10, 2026
-    agendaPublished:    '2026-11-13T09:00:00-06:00', // Nov 13, 2026
+      finalDeadline:      '2026-10-10T23:59:59-05:00', // Oct 10, 2026
+      notifications:      '2026-10-22T09:00:00-05:00', // Oct 22, 2026
+      confirmationDue:    '2026-10-26T23:59:59-05:00', // Oct 26, 2026
+      lineupPublished:    '2026-11-05T09:00:00-06:00', // Nov 5, 2026
+      slidesDue:          '2026-11-16T23:59:59-06:00', // Nov 16, 2026
+      virtualRecordedDue: '2026-11-18T23:59:59-06:00', // Nov 18, 2026
+      agendaPublished:    '2026-11-20T09:00:00-06:00', // Nov 20, 2026
    conferenceDay:      '2026-11-21T08:00:00-06:00'  // Nov 21, 2026
   },
 

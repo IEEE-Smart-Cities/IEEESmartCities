@@ -200,27 +200,27 @@
           cta: 'Submit a proposal', href: 'call-for-speakers.html' },
 
         { until: on(D.notifications), cls: 'is-review', text:
-            'Speaker proposals are now under review. Speaker notification: October 12, 2026.',
+            'Speaker proposals are now under review. Speaker notification: October 22, 2026.',
           cta: 'See the important dates', href: 'call-for-speakers.html#dates' },
 
         { until: on(D.confirmationDue), cls: 'is-review', text:
-            'Speaker notifications have been sent. Speaker confirmation: October 16, 2026.',
+            'Speaker notifications have been sent. Speaker confirmation: October 26, 2026.',
           cta: 'See the important dates', href: 'call-for-speakers.html#dates' },
 
         { until: on(D.lineupPublished), cls: 'is-review', text:
-            'Speaker confirmations are complete. Preliminary speaker lineup: October 26, 2026.',
+            'Speaker confirmations are complete. Preliminary speaker lineup: November 5, 2026.',
           cta: 'See the important dates', href: 'call-for-speakers.html#dates' },
 
         { until: on(D.slidesDue), cls: 'is-open', text:
-            'Preliminary speaker lineup is published. Final presentation materials: November 6, 2026.',
+            'Preliminary speaker lineup is published. Final presentation materials: November 16, 2026.',
           cta: 'View speakers', href: 'speakers.html' },
 
         { until: on(D.virtualRecordedDue), cls: 'is-open', text:
-            'Final presentation materials are collected. Virtual/recorded presentations are due November 10, 2026.',
+            'Final presentation materials are collected. Virtual/recorded presentations are due November 18, 2026.',
           cta: 'See the important dates', href: 'call-for-speakers.html#dates' },
 
         { until: on(D.agendaPublished), cls: 'is-open', text:
-            'Presentation materials are complete. Final agenda publishes November 13, 2026.',
+            'Presentation materials are complete. Final agenda publishes November 20, 2026.',
           cta: 'View speakers', href: 'speakers.html' },
 
         { until: on(D.conferenceDay), cls: 'is-open', text:
