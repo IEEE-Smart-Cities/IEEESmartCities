@@ -33,9 +33,7 @@ committee member can edit text directly without a build process.
    required later.
 2. Update the shared contact email in `js/config.js` when a replacement
    address is approved.
-3. Confirm any venue changes with Collin College. The published venue is
-   Collin College – Wylie Campus Conference Center, 391 Country Club Rd,
-   Wylie, TX 75098.
+3. Keep the conference format virtual across public pages and registration materials.
 4. Add confirmed speaker cards and the final agenda once available
    (placeholders are marked with `DEVELOPER NOTE` comments in
    `speakers.html` and `agenda.html`).
@@ -47,8 +45,8 @@ committee member can edit text directly without a build process.
 
 - Keep `ieeesmartcityconference.org` on auto-renew and complete IEEE domain ownership
   transfer or obtain written approval from the IEEE Experience Design Team.
-- Keep the Sessionize conference name, website, hybrid Wylie location, proposal formats,
-  milestone dates, travel policy, and six-track list synchronized with this site.
+- Keep the Sessionize conference name, website, virtual format and access instructions,
+  proposal formats, milestone dates, and six-track list synchronized with this site.
 - Record written consent before publishing committee members, titles, affiliations,
   photographs, contact details, or biographies.
 - If repository visibility changes, verify that the organization plan continues to

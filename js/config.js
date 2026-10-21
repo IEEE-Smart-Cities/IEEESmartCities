@@ -54,8 +54,8 @@ window.SC_CONFIG = {
   /* -----------------------------------------------------------
      4. DRAFT NOTICE
      -----------------------------------------------------------
-     Leave true until the committee has signed off on date, venue
-     wording, IEEE branding and sponsorship language,
+   Leave true until the committee has signed off on date, virtual
+   event wording, IEEE branding and sponsorship language,
      the shared email, and the Sessionize URL. When true, a short
      "subject to committee approval" line stays in the footer.
   ----------------------------------------------------------- */
